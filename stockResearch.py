@@ -3,8 +3,9 @@ import os
 import requests
 # from urllib2 import Request, urlopen, URLError
 # from xml.etree import ElementTree
-# import xml.etree.ElementTree as ET
-from lxml import etree
+# from cStringIO import StringIO
+import xml.etree.ElementTree as ET
+# from lxml import etree
 
 mAppName = "Stock Management System";
 mAppWidth = 800;
@@ -59,6 +60,14 @@ class windowClass(wx.Frame):
 	            if 200 != resp.status_code:
 	            	return False
 
+	            print resp.status_code
+	            print resp.headers['content-type']
+	            print resp.encoding
+
+	            e = ET.parse(resp.content).getroot()
+	            # print e
+	            
+	            # print resp.text
 	            # tree = etree.parse(resp)
 	            # print tree.docinfo.doctype
 
@@ -89,11 +98,14 @@ class windowClass(wx.Frame):
 	            # for child in tree:
 	            	# print child.tag, child.attrib
 	            # print(data)
-	            # ET.fromstring(resp)
-
+	            # tree = ElementTree.ElementTree(ElementTree.fromstring(resp.content))
+	            # tree = ET.parse(resp.content)
+	            # root = ET.fromstring(resp.content)
+	            # tree = ElementTree.parse(StringIO(resp.content))
+	            # tree.getroot().tag
 	            # print resp[559:1000]
-	            print resp
-	            os.system('python CallRequest.py')
+	            # print tree
+	            # os.system('python CallRequest.py')
 	        # except URLError, e:
 	        #     print 'No resp. Got an error code:', e
 
