@@ -1,17 +1,21 @@
 from xmlReader import xmlReader
 #http://202.125.90.199/securityQuote/genStockXMLHK.php?stockcode=00001
-url = "http://202.125.90.199/securityQuote/genStockXMLHK.php?stockcode=00002"
+#url = "http://202.125.90.199/securityQuote/genStockXMLHK.php?stockcode=00002"
+url = "http://202.125.90.199/securityQuote/genStockXMLHK.php?stockcode="
 con = None
+
 class searchStock():
-    def __init__(self, url):
-        self.xmlread = xmlReader(url)
+    def __init__(self, url, stockCode):
+        self.xmlread = xmlReader(url, stockCode, stockCode + '.xml')
         self.url = url
+        self.stockCode = stockCode
+        self.xmlread.requestXML()
         
     def displayAllXML(self):
         #print url
-        content = self.xmlread.requestXML()
-        #content = self.xmlread.decodeBig5(content)
-        con = content
+        with open (self.stockCode + '.xml', "r") as myfile:
+            content = myfile.read().decode('utf-8')
+        
         return content
     def getSymbol(self):
         symbol = self.displayAllXML()
@@ -185,14 +189,14 @@ class searchStock():
 
 
 
-ss = searchStock(url)
+ss = searchStock(url, '00001')
 #print ss.displayAllXML()
-#print ss.getSymbol()
-#print ss.getEnName()
-#print ss.getTCName()
-#print ss.getSCName()
-#print ss.getSSPN()
-#print ss.getMA50()
+print ss.getSymbol()
+print ss.getEnName()
+print ss.getTCName()
+print ss.getSCName()
+print ss.getSSPN()
+print ss.getMA50()
 
 
 
