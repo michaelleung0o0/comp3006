@@ -24,7 +24,7 @@ class sqlConnection:
             print row[1]
 
 
-sc = sqlConnection("localhost", "admin", "123456", "comp2018db")
+#sc = sqlConnection("localhost", "admin", "123456", "comp2018db")
 #sc.runSQL("select * from bookmark")
-sc.printSQLResult("select * from bookmark")
+#sc.printSQLResult("select * from bookmark")
         
