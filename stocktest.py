@@ -190,13 +190,13 @@ class searchStock():
 
 
 ss = searchStock(url, '00001')
-#print ss.displayAllXML()
-print ss.getSymbol()
-print ss.getEnName()
-print ss.getTCName()
-print ss.getSCName()
-print ss.getSSPN()
-print ss.getMA50()
+print ss.displayAllXML()
+#print ss.getSymbol()
+#print ss.getEnName()
+#print ss.getTCName()
+#print ss.getSCName()
+#print ss.getSSPN()
+#print ss.getMA50()
 
 
 
