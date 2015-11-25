@@ -1,31 +1,45 @@
 import wx
 import wx.xrc
 import wx.richtext
+import sys
 
-
-
-###########################################################################
-## Index Page
-###########################################################################
+from Login import Login
 
 class IndexPage ( wx.Frame ):
     def __init__( self, parent ):
-        wx.Frame.__init__ ( self, parent, wx.ID_ANY)
-        self.Login_frame_1 = Login_frame_1.__init__( self, parent )
-        self.Home_Frame_2 = Home_Frame_2.__init__( self, parent )
-        self.News_Frame_3 = News_Frame_3.__init__( self, parent )
-        self.Search_stock_Frame_4 = Search_stock_Frame_4.__init__( self, parent )
-        self.Monitoring_Frame_5 = Monitoring_Frame_5.__init__( self, parent )
-        self.Admin_6 = Admin_6.__init__( self, parent )
-        #self.User_Admin = User_Admin (self)
-        #self.Statistics = Statistics (self)
-        #self.Setting = Setting (self)
+		wx.Frame.__init__( self, parent, wx.ID_ANY, size= wx.Size( 900,650 ))
+		# global Finances_L
+		# Finances_L = Finances_L(self)
+		# global Login
+		# Login = Login( self )
+		# global Welcome
+		# Welcome = Welcome( self )
+		# global Search_Stock
+		# Search_Stock = Search_Stock( self )
+		# global Monitoring_stock
+		# Monitoring_stock = Monitoring_stock(self)
+		# global finances
+		# finances = Finances( self )
+		# global Admin
+		# Admin = Admin( self )
 
-        self.Home_Frame_2.Hide()
-        self.News_Frame_3.Hide()
-        self.Search_stock_Frame_4.Hide()
-        self.Monitoring_Frame_5.Hide()
-        self.Admin_6.Hide()
-        #self.User_Admin.Hide()
-        #self.Statistics.Hide()
-        #self.Setting.Hide()
+		# Login.__init__('Login', parent)
+		# os.system('python Login.py')
+		self.l = Login(self)
+
+		# self.child = Login(self)
+		# self.child.show()
+
+		# Login.Show()
+		# Finances_L.Hide()
+		# Welcome.Hide()
+		# Search_Stock.Hide()
+		# Monitoring_stock.Hide()
+		# finances.Hide()
+		# Admin.Hide()
+
+	# def callWelcome( self ):
+	# 	self.w = Welcome(self)
+
+
+
