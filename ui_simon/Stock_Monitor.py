@@ -28,7 +28,7 @@ class Finances_L ( wx.Panel ):
 	
 	def __init__( self, parent ):
 		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,600 ), style = wx.TAB_TRAVERSAL )
-		
+
 		self.SetMinSize( wx.Size( 900,600 ) )
 		
 		bSizerFrame = wx.BoxSizer( wx.VERTICAL )
@@ -36,6 +36,13 @@ class Finances_L ( wx.Panel ):
 		self.f_panel = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( -1,-1 ), wx.TAB_TRAVERSAL )
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 		
+		try:
+			image_file = 'bg.jpg'
+			bmp = wx.Image(image_file, wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+			self.bitmap = wx.StaticBitmap(self.f_panel, -1, bmp, (0,0))
+		except IOError:
+			raise SystemExit
+
 		bSizer2 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.title = wx.StaticText( self.f_panel, wx.ID_ANY, u"Finances News", wx.DefaultPosition, wx.DefaultSize, 0 )
@@ -101,7 +108,6 @@ class Login ( wx.Panel ):
 	
 	def __init__( self, parent ):
 		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,600 ), style = wx.TAB_TRAVERSAL )
-		
 		self.SetMinSize( wx.Size( 900,600 ) )
 		
 		bSizerFrame = wx.BoxSizer( wx.VERTICAL )
@@ -109,6 +115,13 @@ class Login ( wx.Panel ):
 		self.lg_panel = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( -1,-1 ), wx.TAB_TRAVERSAL )
 		self.lg_panel.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_MENU ) )
 		
+		try:
+			image_file = 'bg.jpg'
+			bmp = wx.Image(image_file, wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+			self.bitmap = wx.StaticBitmap(self.lg_panel, -1, bmp, (0,0))
+		except IOError:
+			raise SystemExit
+
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 		
 		
@@ -116,6 +129,10 @@ class Login ( wx.Panel ):
 		
 		bSizer2 = wx.BoxSizer( wx.VERTICAL )
 		
+		self.m_staticText = wx.StaticText( self.lg_panel, wx.ID_ANY, u"Welcom to Stock Monitoring System", wx.Point( 115,50 ), wx.Size( -1,-1 ), 0 )
+		self.m_staticText.Wrap( -1 )
+		self.m_staticText.SetFont( wx.Font( 40, 74, 90, 92, False, "Arial" ) )
+
 		self.m_staticText1 = wx.StaticText( self.lg_panel, wx.ID_ANY, u"Login", wx.Point( -1,-1 ), wx.Size( -1,-1 ), 0 )
 		self.m_staticText1.Wrap( -1 )
 		self.m_staticText1.SetFont( wx.Font( 36, 74, 90, 92, False, "Arial" ) )
@@ -143,19 +160,19 @@ class Login ( wx.Panel ):
 		self.m_staticText51.Wrap( -1 )
 		fgSizer181.Add( self.m_staticText51, 0, wx.ALL, 5 )
 		
-		self.m_textCtrl31 = wx.TextCtrl( self.lg_panel, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_textCtrl31.SetMinSize( wx.Size( 250,-1 ) )
+		self.Uid = wx.TextCtrl( self.lg_panel, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Uid.SetMinSize( wx.Size( 250,-1 ) )
 		
-		fgSizer181.Add( self.m_textCtrl31, 0, wx.ALL, 5 )
+		fgSizer181.Add( self.Uid, 0, wx.ALL, 5 )
 		
 		self.m_staticText61 = wx.StaticText( self.lg_panel, wx.ID_ANY, u"Password:", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText61.Wrap( -1 )
 		fgSizer181.Add( self.m_staticText61, 0, wx.ALL, 5 )
 		
-		self.m_textCtrl41 = wx.TextCtrl( self.lg_panel, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_textCtrl41.SetMinSize( wx.Size( 250,-1 ) )
+		self.Upw = wx.TextCtrl( self.lg_panel, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Upw.SetMinSize( wx.Size( 250,-1 ) )
 		
-		fgSizer181.Add( self.m_textCtrl41, 1, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
+		fgSizer181.Add( self.Upw, 1, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
 		
 		
 		bSizer4.Add( fgSizer181, 0, wx.ALIGN_CENTER_HORIZONTAL, 5 )
@@ -214,6 +231,8 @@ class Login ( wx.Panel ):
 		self.SetSizer( bSizerFrame )
 		self.Layout()
 		
+		
+
 		# Connect Events
 		self.login.Bind( wx.EVT_BUTTON, self.onlogin )
 		self.register.Bind( wx.EVT_BUTTON, self.onRegister )
@@ -225,10 +244,12 @@ class Login ( wx.Panel ):
 	
 	def __del__( self ):
 		pass
-	
+
 	
 	# Virtual event handlers, overide them in your derived class
 	def onlogin( self, event ):
+		print self.Uid.GetValue()
+		print self.Upw.GetValue()
 		self.Hide()
 		Welcome.Show()
 	
@@ -269,13 +290,21 @@ class Welcome ( wx.Panel ):
 		bSizerFrame = wx.BoxSizer( wx.VERTICAL )
 		
 		self.w_panel = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( -1,-1 ), wx.TAB_TRAVERSAL )
+		
+		try:
+			image_file = 'bg.jpg'
+			bmp = wx.Image(image_file, wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+			self.bitmap = wx.StaticBitmap(self.w_panel, -1, bmp, (0,0))
+		except IOError:
+			raise SystemExit
+
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 		
 		bSizer59 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.title = wx.StaticText( self.w_panel, wx.ID_ANY, u"Welcome", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.title.Wrap( -1 )
-		self.title.SetFont( wx.Font( 20, 70, 90, 92, False, wx.EmptyString ) )
+		self.title.SetFont( wx.Font( 30, 70, 90, 92, False, wx.EmptyString ) )
 		
 		bSizer59.Add( self.title, 0, wx.ALL, 5 )
 		
@@ -401,13 +430,21 @@ class Finances ( wx.Panel ):
 		bSizerFrame = wx.BoxSizer( wx.VERTICAL )
 		
 		self.f_panel = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( -1,-1 ), wx.TAB_TRAVERSAL )
+		
+		try:
+			image_file = 'bg.jpg'
+			bmp = wx.Image(image_file, wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+			self.bitmap = wx.StaticBitmap(self.f_panel, -1, bmp, (0,0))
+		except IOError:
+			raise SystemExit
+
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 		
 		bSizer2 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.title = wx.StaticText( self.f_panel, wx.ID_ANY, u"Finances News", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.title.Wrap( -1 )
-		self.title.SetFont( wx.Font( 20, 70, 90, 92, False, wx.EmptyString ) )
+		self.title.SetFont( wx.Font( 30, 70, 90, 92, False, wx.EmptyString ) )
 		
 		bSizer2.Add( self.title, 0, wx.ALL, 5 )
 		
@@ -417,7 +454,7 @@ class Finances ( wx.Panel ):
 		bSizer3 = wx.BoxSizer( wx.VERTICAL )
 		
 		bSizer3.SetMinSize( wx.Size( -1,400 ) ) 
-		self.main_c = wx.richtext.RichTextCtrl( self.f_panel, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
+		self.main_c = wx.richtext.RichTextCtrl( self.f_panel, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, wx.TE_READONLY|wx.TE_RICH|wx.TE_RICH2|wx.TE_WORDWRAP|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
 		bSizer3.Add( self.main_c, 1, wx.EXPAND |wx.ALL, 5 )
 		
 		
@@ -532,11 +569,18 @@ class Search_Stock ( wx.Panel ):
 		self.s_panel = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( -1,-1 ), wx.TAB_TRAVERSAL )
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 		
+		try:
+			image_file = 'bg.jpg'
+			bmp = wx.Image(image_file, wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+			self.bitmap = wx.StaticBitmap(self.s_panel, -1, bmp, (0,0))
+		except IOError:
+			raise SystemExit
+
 		bSizer2 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.title = wx.StaticText( self.s_panel, wx.ID_ANY, u"Search Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.title.Wrap( -1 )
-		self.title.SetFont( wx.Font( 20, 70, 90, 92, False, wx.EmptyString ) )
+		self.title.SetFont( wx.Font( 30, 70, 90, 92, False, wx.EmptyString ) )
 		
 		bSizer2.Add( self.title, 0, wx.ALL, 5 )
 		
@@ -548,7 +592,7 @@ class Search_Stock ( wx.Panel ):
 		bSizer3.SetMinSize( wx.Size( -1,400 ) ) 
 		bSizer4 = wx.BoxSizer( wx.HORIZONTAL )
 		
-		self.search_tit = wx.StaticText( self.s_panel, wx.ID_ANY, u"Search Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.search_tit = wx.StaticText( self.s_panel, wx.ID_ANY, u"Search Stock : ", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.search_tit.Wrap( -1 )
 		bSizer4.Add( self.search_tit, 0, wx.ALL, 5 )
 		
@@ -567,7 +611,7 @@ class Search_Stock ( wx.Panel ):
 		
 		bSizer6 = wx.BoxSizer( wx.VERTICAL )
 		
-		self.displaySearchResult = wx.richtext.RichTextCtrl( self.DisplaySearchResult, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
+		self.displaySearchResult = wx.richtext.RichTextCtrl( self.DisplaySearchResult, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, wx.TE_READONLY|wx.TE_RICH|wx.TE_RICH2|wx.TE_WORDWRAP|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
 		self.displaySearchResult.SetMinSize( wx.Size( -1,700 ) )
 		
 		bSizer6.Add( self.displaySearchResult, 1, wx.EXPAND |wx.ALL, 5 )
@@ -692,13 +736,21 @@ class Monitoring_stock ( wx.Panel ):
 		bSizerFrame = wx.BoxSizer( wx.VERTICAL )
 		
 		self.m_panel = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( -1,-1 ), wx.TAB_TRAVERSAL )
+		
+		try:
+			image_file = 'bg.jpg'
+			bmp = wx.Image(image_file, wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+			self.bitmap = wx.StaticBitmap(self.m_panel, -1, bmp, (0,0))
+		except IOError:
+			raise SystemExit
+
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 		
 		bSizer2 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.title = wx.StaticText( self.m_panel, wx.ID_ANY, u"Monitoring Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.title.Wrap( -1 )
-		self.title.SetFont( wx.Font( 20, 70, 90, 92, False, wx.EmptyString ) )
+		self.title.SetFont( wx.Font( 30, 70, 90, 92, False, wx.EmptyString ) )
 		
 		bSizer2.Add( self.title, 0, wx.ALL, 5 )
 		
@@ -832,13 +884,21 @@ class Admin ( wx.Panel ):
 		bSizerFrame = wx.BoxSizer( wx.VERTICAL )
 		
 		self.a_panel = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( -1,-1 ), wx.TAB_TRAVERSAL )
+		
+		try:
+			image_file = 'bg.jpg'
+			bmp = wx.Image(image_file, wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+			self.bitmap = wx.StaticBitmap(self.a_panel, -1, bmp, (0,0))
+		except IOError:
+			raise SystemExit
+
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 		
 		bSizer2 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.title = wx.StaticText( self.a_panel, wx.ID_ANY, u"Admin", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.title.Wrap( -1 )
-		self.title.SetFont( wx.Font( 20, 70, 90, 92, False, wx.EmptyString ) )
+		self.title.SetFont( wx.Font( 30, 70, 90, 92, False, wx.EmptyString ) )
 		
 		bSizer2.Add( self.title, 0, wx.ALL, 5 )
 		
@@ -1396,7 +1456,7 @@ class Setting ( wx.Frame ):
 	
 class IndexPage ( wx.Frame ):
     def __init__( self, parent ):
-		wx.Frame.__init__( self, parent, wx.ID_ANY, size= wx.Size( 900,650 ))
+		wx.Frame.__init__( self, parent, wx.ID_ANY, size= wx.Size( 900,620 ))
 		global Finances_L
 		Finances_L = Finances_L(self)
 		global Login
