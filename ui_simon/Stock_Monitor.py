@@ -233,17 +233,20 @@ class Login ( wx.Panel ):
 		Welcome.Show()
 	
 	def onRegister( self, event ):
-		event.Skip()
+		self.Register = Register(self)
+		self.Register.Show()
 	
 	def onForgetPassword( self, event ):
-		event.Skip()
-	
+		self.Forget_password = Forget_password(self)
+		self.Forget_password.Show()
+
 	def onExit( self, event ):
 		sys.exit(0)
 	
 	def onSetting( self, event ):
-		event.Skip()
-	
+		self.Setting = Setting(self)
+		self.Setting.Show()
+
 	def onAboutUs( self, event ):
 		event.Skip()
 	
@@ -370,7 +373,8 @@ class Welcome ( wx.Panel ):
 		Monitoring_stock.Show()
 
 	def onSetting( self, event ):
-		event.Skip()
+		self.Setting = Setting(self)
+		self.Setting.Show()
 	
 	def onAbout( self, event ):
 		event.Skip()
@@ -501,7 +505,8 @@ class Finances ( wx.Panel ):
 		Monitoring_stock.Show()
 
 	def onSetting( self, event ):
-		event.Skip()
+		self.Setting = Setting(self)
+		self.Setting.Show()
 	
 	def onAbout( self, event ):
 		event.Skip()
@@ -662,7 +667,8 @@ class Search_Stock ( wx.Panel ):
 		Monitoring_stock.Show()
 
 	def onSetting( self, event ):
-		event.Skip()
+		self.Setting = Setting(self)
+		self.Setting.Show()
 	
 	def onAbout( self, event ):
 		event.Skip()
@@ -802,7 +808,8 @@ class Monitoring_stock ( wx.Panel ):
 		Monitoring_stock.Show()
 
 	def onSetting( self, event ):
-		event.Skip()
+		self.Setting = Setting(self)
+		self.Setting.Show()
 	
 	def onAbout( self, event ):
 		event.Skip()
@@ -985,7 +992,8 @@ class Admin ( wx.Panel ):
 		Monitoring_stock.Show()
 
 	def onSetting( self, event ):
-		event.Skip()
+		self.Setting = Setting(self)
+		self.Setting.Show()
 	
 	def onAbout( self, event ):
 		event.Skip()
@@ -1079,12 +1087,13 @@ class Forget_password ( wx.Frame ):
 	# Virtual event handlers, overide them in your derived class
 	def onReset( self, event ):
 		event.Skip()
+		self.Destroy()
 	
 	def onContect( self, event ):
 		event.Skip()
 	
 	def onCancel( self, event ):
-		event.Skip()
+		self.Destroy()
 	
 
 ###########################################################################
@@ -1197,9 +1206,10 @@ class Register ( wx.Frame ):
 	# Virtual event handlers, overide them in your derived class
 	def onSave( self, event ):
 		event.Skip()
+		self.Destroy()
 	
 	def onCancel( self, event ):
-		event.Skip()
+		self.Destroy()
 	
 
 ###########################################################################
@@ -1379,9 +1389,10 @@ class Setting ( wx.Frame ):
 	
 	def onSave( self, event ):
 		event.Skip()
+		self.Destroy()
 	
 	def onCancel( self, event ):
-		event.Skip()
+		self.Destroy()
 	
 class IndexPage ( wx.Frame ):
     def __init__( self, parent ):
