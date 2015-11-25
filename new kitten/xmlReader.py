@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #from urllib2 import Request, urlopen, URLError
 #from downloadFile import downloadFile
 import requests
@@ -30,13 +31,27 @@ class xmlReader:
         #english = name.find('english')
         #price = stock.find('price')
         #print english.text , price.text
-    def requestNewsXML(self):
-        xml = self.requestXML().decode('big5').encode('utf-8')
-        root = ET.fromstring(xml)
-        return root
+    def requestNewsXML(self):  
+        xml = self.requestXML()
+        output = open('news.xml', 'wb')
+        output.write(xml)
+        output.close
+        #dxml = xml.decode('big5')
+        with open ('news.xml', "r") as myfile:
+            dxml = myfile.read().decode('big5')
+        
+        #dxml = ET.parse(dxml)
+        
+        dxml = ET.fromstring(dxml)
+        return dxml
+        #return dxml
+        #root = ET.fromstring(dxml)
+        #return root
 
         
-xr = xmlReader("http://202.125.90.199/securityQuote/genStockXMLHK.php?stockcode=", "00001")
-print xr.requestStockXML().find('stock').find('name').find('chinese').text
+#xr = xmlReader("http://202.125.90.199/securityQuote/genStockXMLHK.php?stockcode=", "00001")
+#print xr.requestStockXML().find('stock').find('name').find('chinese').text
 xr2 = xmlReader("http://cn.wsj.com/big5/rssHKstock.xml", "")
-print xr2.requestNewsXML().find('item').decode('big5')
+print xr2.requestNewsXML()
+#xr3 = xmlReader("http://202.125.90.199/securityQuote/genStockXMLHK.php?stockcode=", "00001")
+#print xr3.requestStockXML()

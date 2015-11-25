@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="big5" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel rdf:about="http://cn.wsj.com">
+
+<title>香港股市--華爾街日報</title>
+<link>http://cn.wsj.com/big5/hkstock.asp</link>
+<description>《華爾街日報》中文版絡版最新港股要聞</description>
+<copyright>copyright &amp;copy; 2005 Dow Jones &amp;amp; Company, Inc.</copyright>
+<language>zh-tw</language>
+<lastBuildDate>2015年11月23日 星期一 上午 01:09:30</lastBuildDate>
+- <image>
+  <title>cn WSJ.com</title> 
+  <url>http://cn.wsj.com/gb/img/logo178x51.gif</url> 
+  <link>http://cn.wsj.com/</link> 
+  <width>88</width> 
+  <height>31</height> 
+  </image>
+<items>
+<rdf:Seq>
+<rdf:li resource="http://cn.wsj.com/big5/20151123/tec181650.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151123/biz155846.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151123/mkt133105.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151123/fin121042.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151123/mkt075534.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151120/tec111804.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151120/hrd114257.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151118/tec172128.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151118/mkt181211.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151118/biz161313.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151118/tec092343.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151117/tec140758.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151116/mkt101605.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151113/mkt190112.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151113/tec092232.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151113/biz075545.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151111/bog103703.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151111/hrd091756.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151110/tec184338.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151109/tec103259.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151106/tec174057.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151106/biz093749.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151105/bog181843.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151105/bch080716.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151105/biz081441.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151105/mkt092145.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151105/biz075030.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151104/biz175931.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151104/mkt131433.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151103/biz151839.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151103/mkt130337.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151103/biz134819.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151103/tec075345.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151102/mkt170039.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151102/biz131620.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151102/biz075831.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151030/tec170536.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151029/biz143750.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151029/fin154318.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151029/tec091018.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151028/biz094156.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151027/biz165439.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151026/biz115318.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151022/biz190445.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151022/tec170233.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151022/fin100522.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151022/biz092022.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151021/hrd163940.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151021/tec144154.asp?source=rss" /><rdf:li resource="http://cn.wsj.com/big5/20151021/biz133855.asp?source=rss" />
+</rdf:Seq>
+</items>
+</channel>
+<item rdf:about="http://cn.wsj.com/big5/20151123/tec181650.asp?source=rss">
+<title>中興通訊稱國家集成電路基金將收購子公司24%股權</title>
+<link>http://cn.wsj.com/big5/20151123/tec181650.asp?source=rss</link>
+<description>中興通訊股份有限公司周一稱，國家集成電路產業投資基金股份有限公司已同意出資人民幣24億元收購該公司旗下子公司深圳市中興微電子有限公司的少數股權。</description>
+<author></author>
+<pubDate>2015/11/23 18:16:52 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151123/biz155846.asp?source=rss">
+<title>合並交易股東投票在即 李嘉誠或難如願</title>
+<link>http://cn.wsj.com/big5/20151123/biz155846.asp?source=rss</link>
+<description>香港富商李嘉誠周二將面臨挑戰，屆時股東將對其旗下基礎設施公司和坐擁大量現金的電力公司規模達131億美元的合並提議進行表決。兩個在全球極具影響力的股東代理機構已經表示反對這項交易。</description>
+<author></author>
+<pubDate>2015/11/23 13:55:59 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151123/mkt133105.asp?source=rss">
+<title>錦州銀行香港IPO僅獲一家基礎投資者認購</title>
+<link>http://cn.wsj.com/big5/20151123/mkt133105.asp?source=rss</link>
+<description>這種情況十分罕見，今年市場動盪，多數公司在公開發行前都會鎖定大額認購以確保IPO順利進行。</description>
+<author></author>
+<pubDate>2015/11/23 13:31:06 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151123/fin121042.asp?source=rss">
+<title>佳兆業集團債務重組計劃再添變數</title>
+<link>http://cn.wsj.com/big5/20151123/fin121042.asp?source=rss</link>
+<description>佳兆業集團收到對沖基金Farallon的初步非約束性提議，後者牽頭的財團有意向佳兆業集團注資1.5億美元，換取佳兆業新股，還建議用新債券替代佳兆業現有海外債券。佳兆業債務重組計劃或因此受到影響。</description>
+<author></author>
+<pubDate>2015/11/23 10:30:50 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151123/mkt075534.asp?source=rss">
+<title>香港交易所計劃推出中國股票套利產品</title>
+<link>http://cn.wsj.com/big5/20151123/mkt075534.asp?source=rss</link>
+<description>同時在香港和中國內地掛牌的中國股票，在內地的股價通常比在香港更高，這個價差吸引投資者尋求套利機會。香港交易所推出的新產品或將為投資者套利提供機會。</description>
+<author></author>
+<pubDate>2015/11/23 08:55:35 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151120/tec111804.asp?source=rss">
+<title>中國力圖打造自己的安全智能手機</title>
+<link>http://cn.wsj.com/big5/20151120/tec111804.asp?source=rss</link>
+<description>中國正尋求制造自己的安全智能手機，以防止中國手機被美國監控。這一行動涉及中國國有公司和一些頂尖的科技公司，標志著中國向建設一個將美國供應商拒之門外的本土科技行業邁出新的一步。</description>
+<author></author>
+<pubDate>2015/11/20 17:18:07 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151120/hrd114257.asp?source=rss">
+<title>新浪公司背靠大樹好乘涼</title>
+<link>http://cn.wsj.com/big5/20151120/hrd114257.asp?source=rss</link>
+<description>新浪公司曾是中國互聯網界的一顆明星，如今它已失去了光芒。不過，如果新浪深化與阿里巴巴的合作，其前景有望進一步改善。</description>
+<author></author>
+<pubDate>2015/11/20 11:42:59 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151118/tec172128.asp?source=rss">
+<title>微眾銀行啟動新一輪融資 擬籌集10億美元</title>
+<link>http://cn.wsj.com/big5/20151118/tec172128.asp?source=rss</link>
+<description>據知情人士透露，騰訊控股的關聯公司微眾銀行正尋求新一輪融資，以擴大其金融服務業務，計劃融資規模約10億美元。這輪融資對微眾銀行的估值或達約50億美元。</description>
+<author></author>
+<pubDate>2015/11/18 18:21:38 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151118/mkt181211.asp?source=rss">
+<title>兩家中國航空租賃公司明年將赴港IPO</title>
+<link>http://cn.wsj.com/big5/20151118/mkt181211.asp?source=rss</link>
+<description>知情人士稱，中銀航空租賃和國銀租賃計劃明年通過香港首次公開募股最高籌資25億美元，幫助其在航空市場增長之際擴大機隊規模。</description>
+<author></author>
+<pubDate>2015/11/18 18:12:14 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151118/biz161313.asp?source=rss">
+<title>中國銀行與奢侈品牌賬戶信息之爭考驗美法律體系</title>
+<link>http://cn.wsj.com/big5/20151118/biz161313.asp?source=rss</link>
+<description>在一起受到密切關注的案件中，古馳等奢侈品牌要求獲得假貨制造商在中國銀行所開賬戶的交易信息。中國銀行表示，提供這些信息將違反中國的相關法律。</description>
+<author></author>
+<pubDate>2015/11/18 16:13:15 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151118/tec092343.asp?source=rss">
+<title>中信銀行董事會批準與百度設立直銷銀行</title>
+<link>http://cn.wsj.com/big5/20151118/tec092343.asp?source=rss</link>
+<description>中信銀行股份有限公司董事會已批準一項與中國互聯網搜索巨頭百度共同設立直銷銀行的計劃，注冊資本暫定為人民幣20億元。</description>
+<author></author>
+<pubDate>2015/11/18 09:23:45 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151117/tec140758.asp?source=rss">
+<title>百度和中信銀行擬成立直銷銀行</title>
+<link>http://cn.wsj.com/big5/20151117/tec140758.asp?source=rss</link>
+<description>一名熟悉相關討論的知情人士周二透露，百度和中信銀行計劃合作成立直銷銀行。這是百度為了在迅速增長的互聯網金融服務領域更好地展開競爭而推出的最新舉措。</description>
+<author></author>
+<pubDate>2015/11/17 14:08:00 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151116/mkt101605.asp?source=rss">
+<title>達利食品香港IPO籌資11.5億美元</title>
+<link>http://cn.wsj.com/big5/20151116/mkt101605.asp?source=rss</link>
+<description>知情人士表示，中國民營企業達利食品集團有限公司通過香港首次公開募股籌資11.5億美元，這是今年迄今為止中國大陸民營企業最大規模的新股發行交易。</description>
+<author></author>
+<pubDate>2015/11/16 10:16:07 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151113/mkt190112.asp?source=rss">
+<title>中國能源建設和大唐環境產業計劃在港IPO</title>
+<link>http://cn.wsj.com/big5/20151113/mkt190112.asp?source=rss</link>
+<description>中國能源建設和大唐環境產業計劃12月份在香港市場進行IPO，總融資規模不超過26億美元。</description>
+<author></author>
+<pubDate>2015/11/13 19:01:13 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151113/tec092232.asp?source=rss">
+<title>聯想集團六年多來首現季度淨虧損</title>
+<link>http://cn.wsj.com/big5/20151113/tec092232.asp?source=rss</link>
+<description>聯想集團第二財季淨虧損7.14億美元，為六年多來首次出現季度淨虧損，凸顯出這家中國電子產品制造商面臨的嚴峻挑戰：該公司兩筆美國收購交易的整合仍面臨困難，同時個人電腦和智能手機需求增長放緩。</description>
+<author></author>
+<pubDate>2015/11/13 09:22:34 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151113/biz075545.asp?source=rss">
+<title>佳兆業集團：部分物業仍處查封狀態</title>
+<link>http://cn.wsj.com/big5/20151113/biz075545.asp?source=rss</link>
+<description>佳兆業集團周四公布，截至11月10日，應訴通知書下具爭議的合約總額為人民幣215億元；位於深圳的四個物業項目的1,444個單位在債權人提出法院申請後仍遭查封，另有732個單位仍受地方政府的鎖定。</description>
+<author></author>
+<pubDate>2015/11/13 07:55:47 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151111/bog103703.asp?source=rss">
+<title>香港房地產價格將大跌40%?</title>
+<link>http://cn.wsj.com/big5/20151111/bog103703.asp?source=rss</link>
+<description>美聯儲加息預期和中國增長放緩可能加速香港房價下滑勢頭，進而拖累香港房地產上市公司的股價，鷹君集團、希慎興業和領展房地產基金或面臨風險。德意志銀行分析師預計香港的房價將下跌30%甚至更多。</description>
+<author></author>
+<pubDate>2015/11/11 10:37:05 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151111/hrd091756.asp?source=rss">
+<title>騰訊控股股價為何有望繼續走高?</title>
+<link>http://cn.wsj.com/big5/20151111/hrd091756.asp?source=rss</link>
+<description>在圍繞中國互聯網股票的不安情緒爆發之際，騰訊控股有限公司的股價卻相當堅挺。該公司第三財季利潤的強勁表現將進一步提振股價。</description>
+<author></author>
+<pubDate>2015/11/11 09:18:02 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151110/tec184338.asp?source=rss">
+<title>騰訊第三季度利潤增長32%</title>
+<link>http://cn.wsj.com/big5/20151110/tec184338.asp?source=rss</link>
+<description>騰訊控股週二稱，第三季度實現淨利潤人民幣74.5億元，同比增長32%，來自手機遊戲和廣告的收入穩健增長。</description>
+<author></author>
+<pubDate>2015/11/10 18:43:40 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151109/tec103259.asp?source=rss">
+<title>高通中國專利授權業務遇阻 與小米聯想協議難簽</title>
+<link>http://cn.wsj.com/big5/20151109/tec103259.asp?source=rss</link>
+<description>小米和聯想是全球排名靠前的兩家中國智能手機生產商。但據知情人士透露，高通仍未與這兩家公司達成新的專利許可協議。高通公司大部分利潤來自無線技術專利。</description>
+<author></author>
+<pubDate>2015/11/09 12:33:02 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151106/tec174057.asp?source=rss">
+<title>騰訊控股正洽商獲得15億美元銀團貸款</title>
+<link>http://cn.wsj.com/big5/20151106/tec174057.asp?source=rss</link>
+<description>據知情人士透露，騰訊控股有限公司正洽商獲得15億美元銀團貸款，所獲資金將用於未來收購和其他支出。</description>
+<author></author>
+<pubDate>2015/11/06 17:40:59 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151106/biz093749.asp?source=rss">
+<title>歐洲銀行復興長路漫漫</title>
+<link>http://cn.wsj.com/big5/20151106/biz093749.asp?source=rss</link>
+<description>歐洲大型銀行在金融危機後的重組方面落後於美國銀行，從其最新財報看，它們的復興之路還很漫長。</description>
+<author></author>
+<pubDate>2015/11/06 15:30:51 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151105/bog181843.asp?source=rss">
+<title>香港股市值得關注的三只低估值小型股</title>
+<link>http://cn.wsj.com/big5/20151105/bog181843.asp?source=rss</link>
+<description>香港股市一些大型股已經從9月份低點回升，但眾多小型股還未翻身。誠然，小型股通常風險更高，當人氣降溫時更易遭到拋售，但許多小型股目前的估值已經非常低，並且利潤增勢強勁，應當可以避免進一步下跌。</description>
+<author></author>
+<pubDate>2015/11/05 18:18:46 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151105/bch080716.asp?source=rss">
+<title>南方航空董事長司獻民被中紀委調查</title>
+<link>http://cn.wsj.com/big5/20151105/bch080716.asp?source=rss</link>
+<description>中國反腐官員正在調查中國南方航空股份有限公司董事長司獻民，這表明中國國家主席習近平推動的大規模反腐行動已深入到航空業的最高領導層。</description>
+<author></author>
+<pubDate>2015/11/05 08:07:17 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151105/biz081441.asp?source=rss">
+<title>中國人壽10億美元投資美國倉儲業務</title>
+<link>http://cn.wsj.com/big5/20151105/biz081441.asp?source=rss</link>
+<description>據知情人士透露，中國人壽投資10億多美元入股美國倉儲業務，這是該公司迄今規模最大的跨境房地產交易。中國人壽將在普洛斯公司最近收購的倉儲業務中持有約30%股份。</description>
+<author></author>
+<pubDate>2015/11/05 08:04:43 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151105/mkt092145.asp?source=rss">
+<title>多家中資醫療保健公司進行香港IPO</title>
+<link>http://cn.wsj.com/big5/20151105/mkt092145.asp?source=rss</link>
+<description>中資醫療保健公司正蜂擁至香港進行首次公開募股，不過這些公司也未能倖免於今年市場震盪的衝擊。</description>
+<author></author>
+<pubDate>2015/11/05 07:56:47 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151105/biz075030.asp?source=rss">
+<title>阿里影業將收購阿里巴巴旗下電影相關業務</title>
+<link>http://cn.wsj.com/big5/20151105/biz075030.asp?source=rss</link>
+<description>阿里影業週三表示，將斥資約5.2億美元收購母公司中國電子商務巨頭阿里巴巴集團旗下的電影相關業務。</description>
+<author></author>
+<pubDate>2015/11/05 07:50:32 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151104/biz175931.asp?source=rss">
+<title>嘉能可樂觀預計減債成效和交易部門表現</title>
+<link>http://cn.wsj.com/big5/20151104/biz175931.asp?source=rss</link>
+<description>嘉能可周三表示，削減淨債務的努力取得了重大進展。該公司同時重申，盡管原材料價格大跌，但大宗商品交易部門的表現符合預期。</description>
+<author></author>
+<pubDate>2015/11/04 13:30:34 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151104/mkt131433.asp?source=rss">
+<title>中國央行：周小川關於今年開通深港通的講話是5月發表的</title>
+<link>http://cn.wsj.com/big5/20151104/mkt131433.asp?source=rss</link>
+<description>中國央行新聞處週三午間明確，周小川關於今年開通深港通的講話是5月27日發表的。這一講話今日上午推動港股和A股大幅上漲。</description>
+<author></author>
+<pubDate>2015/11/04 13:14:35 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151103/biz151839.asp?source=rss">
+<title>渣打集團計劃2018年前裁員1.5萬人</title>
+<link>http://cn.wsj.com/big5/20151103/biz151839.asp?source=rss</link>
+<description>渣打集團周二公布了一項重大業務調整計劃，將涉及籌資、裁員、削減成本、退出某些業務和國家，以及設定新的盈利目標。作為計劃的一部分，該行將在2018年前總計裁員1.5萬人。</description>
+<author></author>
+<pubDate>2015/11/03 17:18:41 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151103/mkt130337.asp?source=rss">
+<title>香港證監會審裁處繼續針對做空者Andrew Left的研訊</title>
+<link>http://cn.wsj.com/big5/20151103/mkt130337.asp?source=rss</link>
+<description>香港市場失當行為審裁處繼續推進針對美國做空機構Citron Research創始人Andrew Left的研訊程序。香港證券監管機構三年前指控Left發布有關恆大地產的虛假信息。</description>
+<author></author>
+<pubDate>2015/11/03 13:03:39 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151103/biz134819.asp?source=rss">
+<title>渣打集團將通過供股籌資51億美元</title>
+<link>http://cn.wsj.com/big5/20151103/biz134819.asp?source=rss</link>
+<description>渣打集團有限公司周二宣布，計劃通過供股交易籌資51億美元，並決定今年不派發末期股息。該行稱第三季度的經營虧損令人失望。</description>
+<author></author>
+<pubDate>2015/11/03 11:48:22 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151103/tec075345.asp?source=rss">
+<title>騰訊擬向美團-大眾點評合併後公司投資10億美元</title>
+<link>http://cn.wsj.com/big5/20151103/tec075345.asp?source=rss</link>
+<description>據知情人士透露，騰訊控股接近達成協議，向美團和大眾點評合併後的公司投資10億美元，作為後者新一輪融資的一部分。這輪融資對後者的估值可能達到200億美元。</description>
+<author></author>
+<pubDate>2015/11/03 10:08:47 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151102/mkt170039.asp?source=rss">
+<title>巨人網絡131億借殼回歸A股 馬雲、柳傳志加盟</title>
+<link>http://cn.wsj.com/big5/20151102/mkt170039.asp?source=rss</link>
+<description>史玉柱旗下巨人網絡擬以人民幣131億元借殼世紀遊輪回歸A股，馬雲和柳傳志加盟，成為股東。本次交易完成後，世紀遊輪將成為一家以網絡遊戲為主的綜合性互聯網企業。</description>
+<author></author>
+<pubDate>2015/11/02 17:00:42 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151102/biz131620.asp?source=rss">
+<title>中國銀行業欲借影子銀行業務提振業績</title>
+<link>http://cn.wsj.com/big5/20151102/biz131620.asp?source=rss</link>
+<description>中國一些大型銀行通過增加影子銀行產品的投資來應對利潤疲軟的問題。分析師指出，如果市場形勢惡化，這些銀行的財務狀況可能也會惡化。</description>
+<author></author>
+<pubDate>2015/11/02 15:16:22 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151102/biz075831.asp?source=rss">
+<title>歐盟調查和記黃埔收購英國O2的交易</title>
+<link>http://cn.wsj.com/big5/20151102/biz075831.asp?source=rss</link>
+<description>歐盟委員會已開始全面調查Telefonica SA將英國手機運營商O2出售給和記黃埔的交易計劃，監管部門警告稱，這樁交易可能會導致英國移動通訊服務價格升高、消費者的選擇變少。</description>
+<author></author>
+<pubDate>2015/11/02 07:58:33 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151030/tec170536.asp?source=rss">
+<title>諾基亞獲中國移動10億美元移動寬帶設備合同</title>
+<link>http://cn.wsj.com/big5/20151030/tec170536.asp?source=rss</link>
+<description>諾基亞公司已接獲來自中國移動有限公司的10億美元合同，將為其提供移動寬帶設備和服務。諾基亞網絡與中國移動通信研究院還簽署了一項諒解備忘錄，將在5G演進和開發方面開展戰略合作。</description>
+<author></author>
+<pubDate>2015/10/30 17:05:37 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151029/biz143750.asp?source=rss">
+<title>匯豐控股是否因規模太大而需遷出英國？</title>
+<link>http://cn.wsj.com/big5/20151029/biz143750.asp?source=rss</link>
+<description>在匯豐控股有限公司董事會正在權衡是否要把總部遷出倫敦之際，其面臨的一個關鍵問題是：這家銀行的規模是否大到無法留在倫敦的程度？</description>
+<author></author>
+<pubDate>2015/10/29 15:47:52 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151029/fin154318.asp?source=rss">
+<title>上交所、中金所、德交所合作成立中歐國際交易所</title>
+<link>http://cn.wsj.com/big5/20151029/fin154318.asp?source=rss</link>
+<description>上交所週四表示，上交所、德交所、中金所週四在北京就共同成立合資公司中歐所簽署三方股東協議，旨在推動中國資本市場雙向開放和人民幣國際化。</description>
+<author></author>
+<pubDate>2015/10/29 15:43:20 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151029/tec091018.asp?source=rss">
+<title>蘋果大中華區銷售額、利潤雙雙大增</title>
+<link>http://cn.wsj.com/big5/20151029/tec091018.asp?source=rss</link>
+<description>蘋果公司大中華區銷售額在截至9月26日的財年增長84%，而利潤增速更快，營運利潤較上一財年增長逾一倍，營運利潤率攀升至39%。</description>
+<author></author>
+<pubDate>2015/10/29 09:10:19 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151028/biz094156.asp?source=rss">
+<title>三家中國公司向政府申請競購喜達屋</title>
+<link>http://cn.wsj.com/big5/20151028/biz094156.asp?source=rss</link>
+<description>知情人士透露，至少有三家大型中國公司正在爭取中國政府對於競購喜達屋的批準。若交易達成，可能成為有史以來規模最大的中國企業收購美國公司的交易。</description>
+<author></author>
+<pubDate>2015/10/28 15:41:59 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151027/biz165439.asp?source=rss">
+<title>中國平安將與Blumberg合作投資美國房地產市場</title>
+<link>http://cn.wsj.com/big5/20151027/biz165439.asp?source=rss</link>
+<description>中國平安周二宣布，將與美國房地產基金Blumberg合作投資美國房地產市場，雙方將投資一個價值6億美元的資產組合，當中包括多個物流資產，同時還計劃投資另一批價值4億美元的物流資產項目。</description>
+<author></author>
+<pubDate>2015/10/27 16:54:40 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151026/biz115318.asp?source=rss">
+<title>渣打集團將退出股票衍生品及可轉債業務</title>
+<link>http://cn.wsj.com/big5/20151026/biz115318.asp?source=rss</link>
+<description>渣打集團宣布，將退出股票衍生品及可轉債業務，這是該行在新任首席執行長Bill Winters管理下對公司業務進行調整的最新舉措。該公司一位發言人拒絕透露因此而導致的裁員人數，也拒絕就該行因此能夠節約的資金規模發表評論。</description>
+<author></author>
+<pubDate>2015/10/26 11:53:20 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151022/biz190445.asp?source=rss">
+<title>本田汽車暫停在中國建新廠的計劃</title>
+<link>http://cn.wsj.com/big5/20151022/biz190445.asp?source=rss</link>
+<description>本田汽車周四表示，已暫停了一項在中國建新廠的計劃。這再次凸顯出外界對中國這一全球最大汽車市場經濟增長放緩的擔憂。</description>
+<author></author>
+<pubDate>2015/10/22 19:04:47 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151022/tec170233.asp?source=rss">
+<title>中國聯通1-9月淨利潤同比降22.55%</title>
+<link>http://cn.wsj.com/big5/20151022/tec170233.asp?source=rss</link>
+<description>中國聯通周四收盤後公布，1-9月淨利潤同比降22.55%，至人民幣81.81億元；1-9月收入由上年同期的2153.39億元下降1.59%至人民幣2119.13億元。</description>
+<author></author>
+<pubDate>2015/10/22 17:02:34 +0800</pubDate>
+</item><item rdf:about="http://cn.wsj.com/big5/20151022
