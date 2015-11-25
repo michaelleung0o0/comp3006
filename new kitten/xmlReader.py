@@ -5,8 +5,6 @@ import requests
 import xml.etree.ElementTree as ET
 
 
-
-
 class xmlReader:
     def __init__(self, url, extendURL):
         self.url = url
