@@ -2,17 +2,19 @@ import wx
 import wx.xrc
 import wx.richtext
 import sys
+from customString import customString
 
 ###########################################################################
 ## Class About_Us
 ###########################################################################
 
-aboutUSText = "This system is developed by 404 NOT FOUND team from Hong Kong Baptist University.\n 404 NOT FOUND:\n12210102 MAK KIT TIN\n15208249 LEUNG KAI HIN"
+
 
 class About_Us ( wx.Frame ):
 
 	def __init__( self, parent ):
-		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"About Us", pos = wx.DefaultPosition, size = wx.Size( 500,300 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+                self.customString = customString('aboutus')
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = self.customString.title, pos = wx.DefaultPosition, size = wx.Size( 500,300 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 
 		self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
 
@@ -21,16 +23,16 @@ class About_Us ( wx.Frame ):
 		self.m_panel11 = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		bSizer63 = wx.BoxSizer( wx.VERTICAL )
 
-		self.m_staticText30 = wx.StaticText( self.m_panel11, wx.ID_ANY, u"About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText30 = wx.StaticText( self.m_panel11, wx.ID_ANY, self.customString.title, wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText30.Wrap( -1 )
 		self.m_staticText30.SetFont( wx.Font( 20, 70, 90, 92, False, wx.EmptyString ) )
 
 		bSizer63.Add( self.m_staticText30, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
 
-		self.m_richText3 = wx.richtext.RichTextCtrl( self.m_panel11, wx.ID_ANY, aboutUSText, wx.DefaultPosition, wx.DefaultSize, 0|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
+		self.m_richText3 = wx.richtext.RichTextCtrl( self.m_panel11, wx.ID_ANY, self.customString.content, wx.DefaultPosition, wx.DefaultSize, 0|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
 		bSizer63.Add( self.m_richText3, 1, wx.EXPAND |wx.ALL, 5 )
 
-		self.exit = wx.Button( self.m_panel11, wx.ID_ANY, u"&Exit", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.exit = wx.Button( self.m_panel11, wx.ID_ANY, self.customString.exit, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer63.Add( self.exit, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
 
 

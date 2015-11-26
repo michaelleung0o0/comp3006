@@ -2,8 +2,20 @@ import wx
 import wx.xrc
 import wx.richtext
 import sys
+<<<<<<< HEAD
+from customString import customString
+# Finances_L = None
+# Login = None
+# Welcome = None
+# Search_Stock = None
+# Monitoring_stock = None
+# finances = None
+# Admin = None
+
+=======
 
 mTitle = 'Forget Password'
+>>>>>>> origin/master
 ###########################################################################
 ## Class Forget_password
 ###########################################################################
@@ -11,7 +23,12 @@ mTitle = 'Forget Password'
 class Forget_password ( wx.Frame ):
 
 	def __init__( self, parent ):
+<<<<<<< HEAD
+                self.customString = customString('forgetpw')
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = self.customString.title, pos = wx.DefaultPosition, size = wx.Size( 500,200 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+=======
 		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = mTitle, pos = wx.DefaultPosition, size = wx.Size( 500,200 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+>>>>>>> origin/master
 
 		self.SetSizeHintsSz( wx.Size( 500,200 ), wx.DefaultSize )
 
@@ -20,7 +37,11 @@ class Forget_password ( wx.Frame ):
 		self.f_panel = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 
+<<<<<<< HEAD
+		self.title = wx.StaticText( self.f_panel, wx.ID_ANY, self.customString.title, wx.DefaultPosition, wx.DefaultSize, 0 )
+=======
 		self.title = wx.StaticText( self.f_panel, wx.ID_ANY, mTitle, wx.DefaultPosition, wx.DefaultSize, 0 )
+>>>>>>> origin/master
 		self.title.Wrap( -1 )
 		self.title.SetFont( wx.Font( 15, 70, 90, 92, False, wx.EmptyString ) )
 
@@ -30,7 +51,7 @@ class Forget_password ( wx.Frame ):
 		fgSizer.SetFlexibleDirection( wx.BOTH )
 		fgSizer.SetNonFlexibleGrowMode( wx.FLEX_GROWMODE_SPECIFIED )
 
-		self.id = wx.StaticText( self.f_panel, wx.ID_ANY, u"ID: ", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.id = wx.StaticText( self.f_panel, wx.ID_ANY, self.customString.id, wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.id.Wrap( -1 )
 		fgSizer.Add( self.id, 0, wx.ALL, 5 )
 
@@ -39,7 +60,7 @@ class Forget_password ( wx.Frame ):
 
 		fgSizer.Add( self.id_box, 0, wx.ALL, 5 )
 
-		self.email = wx.StaticText( self.f_panel, wx.ID_ANY, u"Email: ", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.email = wx.StaticText( self.f_panel, wx.ID_ANY, self.customString.email, wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.email.Wrap( -1 )
 		fgSizer.Add( self.email, 0, wx.ALL, 5 )
 
@@ -53,13 +74,13 @@ class Forget_password ( wx.Frame ):
 
 		bSizer2 = wx.BoxSizer( wx.HORIZONTAL )
 
-		self.reset_password = wx.Button( self.f_panel, wx.ID_ANY, u"&Reset Password ", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.reset_password = wx.Button( self.f_panel, wx.ID_ANY, self.customString.resetpw, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer2.Add( self.reset_password, 0, wx.ALL, 5 )
 
-		self.Contect_Admin = wx.Button( self.f_panel, wx.ID_ANY, u"&Contect Admin", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Contect_Admin = wx.Button( self.f_panel, wx.ID_ANY, self.customString.contact, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer2.Add( self.Contect_Admin, 0, wx.ALL, 5 )
 
-		self.cancel = wx.Button( self.f_panel, wx.ID_ANY, u"&Cancel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.cancel = wx.Button( self.f_panel, wx.ID_ANY, self.customString.cancel, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer2.Add( self.cancel, 0, wx.ALL, 5 )
 
 

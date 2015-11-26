@@ -2,8 +2,20 @@ import wx
 import wx.xrc
 import wx.richtext
 import sys
+<<<<<<< HEAD
+from customString import customString
+# Finances_L = None
+# Login = None
+# Welcome = None
+# Search_Stock = None
+# Monitoring_stock = None
+# finances = None
+# Admin = None
+
+=======
 
 mTitle = "Setting"
+>>>>>>> origin/master
 ###########################################################################
 ## Class Setting
 ###########################################################################
@@ -11,7 +23,12 @@ mTitle = "Setting"
 class Setting ( wx.Frame ):
 
 	def __init__( self, parent ):
+<<<<<<< HEAD
+                self.customString = customString('setting')
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = self.customString.title, pos = wx.DefaultPosition, size = wx.Size( 632,511 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+=======
 		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = mTitle, pos = wx.DefaultPosition, size = wx.Size( 632,511 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+>>>>>>> origin/master
 
 		self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
 		self.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), 70, 90, 90, False, wx.EmptyString ) )
@@ -36,7 +53,7 @@ class Setting ( wx.Frame ):
 
 		time = wx.StaticBoxSizer( wx.StaticBox( self.setting_panel, wx.ID_ANY, u"Refresh time" ), wx.HORIZONTAL )
 
-		timeChoices = [ u"0.5 seconds", u"1    seconds", u"2    seconds" ]
+		timeChoices = [ self.customString.halfsec, self.customString.onesec, self.customString.twosec ]
 		self.time = wx.Choice( time.GetStaticBox(), wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, timeChoices, 0 )
 		self.time.SetSelection( 0 )
 		time.Add( self.time, 0, wx.ALL, 5 )
@@ -183,5 +200,8 @@ class Setting ( wx.Frame ):
 		event.Skip()
 
 	def onCancel( self, event ):
+<<<<<<< HEAD
+=======
 		# event.Skip()
+>>>>>>> origin/master
 		self.Destroy()
