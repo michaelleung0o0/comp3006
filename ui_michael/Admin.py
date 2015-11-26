@@ -103,7 +103,7 @@ class Admin ( wx.Panel ):
 		self.Exit = wx.Button( self.a_panel, wx.ID_ANY, self.customString.exit, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer10.Add( self.Exit, 0, wx.ALL, 5 )
 
-		self.Logout = wx.Button( self.a_panel, wx.ID_ANY, self.customString.logour, wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Logout = wx.Button( self.a_panel, wx.ID_ANY, self.customString.logout, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer10.Add( self.Logout, 0, wx.ALL, 5 )
 
 		self.Home = wx.Button( self.a_panel, wx.ID_ANY, self.customString.home, wx.DefaultPosition, wx.DefaultSize, 0 )

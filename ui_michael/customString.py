@@ -30,6 +30,22 @@ class customString:
             self.halfsec = u'0.5 sec'
             self.onesec = u'1 sec'
             self.twosec = u'2 sec'
+            self.setTitle = u"System Setting"
+            self.arrow1 = u"Positive : Green; Negative : Red"
+            self.arrow2 = u"Positive : Red; Negative : Green"
+            self.acolor = u"Arrow Color"
+            self.rtime = u"Refresh time"
+            self.apply = u"Apply"
+            self.accstat = u"Account Status"
+            self.pay = u"PAY"
+            self.id = u"ID:"
+            self.oldpw = u"OLD Password:"
+            self.newpw = u"New Password:"
+            self.cpw = u"Confirm New Password:"
+            self.email = u"Email:"
+            self.tel = u"Telphone:"
+            self.save = u"&Save"
+            self.cancel = u"Cancel"
         if case == 'admin':
             self.title = u'Admin'
             self.id = u'ID:'

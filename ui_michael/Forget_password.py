@@ -2,7 +2,6 @@ import wx
 import wx.xrc
 import wx.richtext
 import sys
-<<<<<<< HEAD
 from customString import customString
 # Finances_L = None
 # Login = None
@@ -11,11 +10,6 @@ from customString import customString
 # Monitoring_stock = None
 # finances = None
 # Admin = None
-
-=======
-
-mTitle = 'Forget Password'
->>>>>>> origin/master
 ###########################################################################
 ## Class Forget_password
 ###########################################################################
@@ -23,12 +17,8 @@ mTitle = 'Forget Password'
 class Forget_password ( wx.Frame ):
 
 	def __init__( self, parent ):
-<<<<<<< HEAD
                 self.customString = customString('forgetpw')
 		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = self.customString.title, pos = wx.DefaultPosition, size = wx.Size( 500,200 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
-=======
-		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = mTitle, pos = wx.DefaultPosition, size = wx.Size( 500,200 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
->>>>>>> origin/master
 
 		self.SetSizeHintsSz( wx.Size( 500,200 ), wx.DefaultSize )
 
@@ -37,11 +27,7 @@ class Forget_password ( wx.Frame ):
 		self.f_panel = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 
-<<<<<<< HEAD
 		self.title = wx.StaticText( self.f_panel, wx.ID_ANY, self.customString.title, wx.DefaultPosition, wx.DefaultSize, 0 )
-=======
-		self.title = wx.StaticText( self.f_panel, wx.ID_ANY, mTitle, wx.DefaultPosition, wx.DefaultSize, 0 )
->>>>>>> origin/master
 		self.title.Wrap( -1 )
 		self.title.SetFont( wx.Font( 15, 70, 90, 92, False, wx.EmptyString ) )
 
