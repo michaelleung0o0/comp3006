@@ -7,6 +7,8 @@ import sys
 ## Class About_Us
 ###########################################################################
 
+aboutUSText = "This system is developed by 404 NOT FOUND team from Hong Kong Baptist University.\n 404 NOT FOUND:\n12210102 MAK KIT TIN\n15208249 LEUNG KAI HIN"
+
 class About_Us ( wx.Frame ):
 
 	def __init__( self, parent ):
@@ -25,7 +27,7 @@ class About_Us ( wx.Frame ):
 
 		bSizer63.Add( self.m_staticText30, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
 
-		self.m_richText3 = wx.richtext.RichTextCtrl( self.m_panel11, wx.ID_ANY, "Content", wx.DefaultPosition, wx.DefaultSize, 0|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
+		self.m_richText3 = wx.richtext.RichTextCtrl( self.m_panel11, wx.ID_ANY, aboutUSText, wx.DefaultPosition, wx.DefaultSize, 0|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
 		bSizer63.Add( self.m_richText3, 1, wx.EXPAND |wx.ALL, 5 )
 
 		self.exit = wx.Button( self.m_panel11, wx.ID_ANY, u"&Exit", wx.DefaultPosition, wx.DefaultSize, 0 )
