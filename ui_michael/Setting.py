@@ -3,14 +3,7 @@ import wx.xrc
 import wx.richtext
 import sys
 
-# Finances_L = None
-# Login = None
-# Welcome = None
-# Search_Stock = None
-# Monitoring_stock = None
-# finances = None
-# Admin = None
-
+mTitle = "Setting"
 ###########################################################################
 ## Class Setting
 ###########################################################################
@@ -18,7 +11,7 @@ import sys
 class Setting ( wx.Frame ):
 
 	def __init__( self, parent ):
-		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"Setting", pos = wx.DefaultPosition, size = wx.Size( 632,511 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = mTitle, pos = wx.DefaultPosition, size = wx.Size( 632,511 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 
 		self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
 		self.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), 70, 90, 90, False, wx.EmptyString ) )
@@ -65,7 +58,7 @@ class Setting ( wx.Frame ):
 
 		bSizer6 = wx.BoxSizer( wx.HORIZONTAL )
 
-		self.Acc = wx.StaticText( self.setting_panel, wx.ID_ANY, u"Account Stated", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Acc = wx.StaticText( self.setting_panel, wx.ID_ANY, u"Account Status", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.Acc.Wrap( -1 )
 		bSizer6.Add( self.Acc, 0, wx.ALL, 5 )
 
@@ -188,7 +181,7 @@ class Setting ( wx.Frame ):
 
 	def onSave( self, event ):
 		event.Skip()
-		self.Destroy()
 
 	def onCancel( self, event ):
+		# event.Skip()
 		self.Destroy()

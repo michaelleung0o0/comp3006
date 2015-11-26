@@ -7,7 +7,7 @@ from Welcome import Welcome
 from Register import Register
 from Forget_password import Forget_password
 from Setting import Setting
-from Finances_L import Finances_L
+from Finances import Finances
 from About_Us import About_Us
 # Login = None
 # Search_Stock = None
@@ -186,6 +186,6 @@ class Login ( wx.Panel ):
 	def onNews( self, event ):
 		# self.Hide()
 		self.Close()
-		self.Finances_L = Finances_L(self)
-		self.Finances_L.Show()
+		self.Finances = Finances(self)
+		self.Finances.Show()
 		# Finances_L.Show()

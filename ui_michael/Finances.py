@@ -3,14 +3,8 @@ import wx.xrc
 import wx.richtext
 import sys
 
-# Finances_L = None
-# Login = None
-# Welcome = None
-# Search_Stock = None
-# Monitoring_stock = None
-# finances = None
-# Admin = None
-
+from readNews import readNews
+# from apiRequest import apiRequest
 ###########################################################################
 ## Class Finances
 ###########################################################################
@@ -100,41 +94,37 @@ class Finances ( wx.Panel ):
 		self.About_Us.Bind( wx.EVT_BUTTON, self.onAbout )
 		self.Admin.Bind( wx.EVT_BUTTON, self.onAdmin )
 
+		self.readNews = readNews(self)
+		self.readNews.RSSReader()
+		# self.apiRequest = apiRequest(self)
 	def __del__( self ):
 		pass
 
 
 	# Virtual event handlers, overide them in your derived class
 	def ExitOnButtonClick( self, event ):
-		sys.exit(0)
+		event.Skip()
 
 	def onLogout( self, event ):
-		self.Hide()
-		Login.Show()
+		event.Skip()
 
 	def onHome( self, event ):
-		self.Hide()
-		Welcome.Show()
+		event.Skip()
 
 	def onNews( self, event ):
-		self.Hide()
-		finances.Show()
+		event.Skip()
 
 	def onSearch( self, event ):
-		self.Hide()
-		Search_Stock.Show()
+		event.Skip()
 
 	def onMonitoring( self, event ):
-		self.Hide()
-		Monitoring_stock.Show()
+		event.Skip()
 
 	def onSetting( self, event ):
-		self.Setting = Setting(self)
-		self.Setting.Show()
+		event.Skip()
 
 	def onAbout( self, event ):
 		event.Skip()
 
 	def onAdmin( self, event ):
-		self.Hide()
-		Admin.Show()
+		event.Skip()

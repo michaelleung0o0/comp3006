@@ -105,7 +105,6 @@ class readNews():
             print "%s" % tmpDesc[i-1]
             print "Link: %s\n" % tmpLink[i-1]
             i +=1
-
 # reader = readNews(url)
 # reader.RSSReader()
 #reader.getPubDate()

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf8"?>
+<quote mode="real">
+<stock>
+<server>18</server>
+<symbol>00001</symbol>
+<name>
+	<chinese><![CDATA[長和]]></chinese>
+	<sChinese><![CDATA[长和]]></sChinese>
+	<english><![CDATA[CKH HOLDINGS]]></english>
+</name>
+<sspn>N</sspn>
+<price>102.900</price>
+<change>-0.700</change>
+<pct_change><![CDATA[-0.676%]]></pct_change>
+<pexit>103.60</pexit>
+<open>105.000</open>
+<high>105.200</high>
+<low>102.800</low>
+<bid></bid>
+<ask></ask>
+<year_high>174.90</year_high>
+<year_low>97.50</year_low>
+<volume>3612101</volume>
+<turnover>375627864</turnover>
+<pe>4.424</pe>
+<market_capital></market_capital>
+<month_high>108.50</month_high>
+<month_low>100.50</month_low>
+<lot>500.00</lot>
+<dps>10.654</dps>
+<eps>23.26</eps>
+<rsi>
+	<d10>48.9</d10>
+	<d14>48</d14>
+	<d20>47.8</d20>
+</rsi>
+<ma>
+	<d10>103</d10>
+	<d20>104</d20>
+	<d50>104</d50>
+</ma>
+<relatedStock></relatedStock>
+<issuedShare>3859678500</issuedShare>
+<gearing>0.000</gearing>
+<premium>0.000</premium>
+<currency>HKD</currency>
+<date>2015/11/26 16:01</date>
+</stock>
+</quote>

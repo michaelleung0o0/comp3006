@@ -3,14 +3,7 @@ import wx.xrc
 import wx.richtext
 import sys
 
-# Finances_L = None
-# Login = None
-# Welcome = None
-# Search_Stock = None
-# Monitoring_stock = None
-# finances = None
-# Admin = None
-
+mTitle = 'Forget Password'
 ###########################################################################
 ## Class Forget_password
 ###########################################################################
@@ -18,7 +11,7 @@ import sys
 class Forget_password ( wx.Frame ):
 
 	def __init__( self, parent ):
-		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"Forget Password", pos = wx.DefaultPosition, size = wx.Size( 500,200 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = mTitle, pos = wx.DefaultPosition, size = wx.Size( 500,200 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 
 		self.SetSizeHintsSz( wx.Size( 500,200 ), wx.DefaultSize )
 
@@ -27,7 +20,7 @@ class Forget_password ( wx.Frame ):
 		self.f_panel = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 
-		self.title = wx.StaticText( self.f_panel, wx.ID_ANY, u"Forget Password", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.title = wx.StaticText( self.f_panel, wx.ID_ANY, mTitle, wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.title.Wrap( -1 )
 		self.title.SetFont( wx.Font( 15, 70, 90, 92, False, wx.EmptyString ) )
 
