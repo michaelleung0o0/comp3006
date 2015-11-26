@@ -3,6 +3,7 @@ import wx.xrc
 import wx.richtext
 import sys
 
+from customString import customString
 from readNews import readNews
 # from apiRequest import apiRequest
 ###########################################################################
@@ -12,6 +13,7 @@ from readNews import readNews
 class Finances ( wx.Panel ):
 
 	def __init__( self, parent ):
+		self.customString = customString('fin')
 		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,600 ), style = wx.TAB_TRAVERSAL )
 
 		self.SetMinSize( wx.Size( 900,600 ) )
@@ -23,7 +25,7 @@ class Finances ( wx.Panel ):
 
 		bSizer2 = wx.BoxSizer( wx.VERTICAL )
 
-		self.title = wx.StaticText( self.f_panel, wx.ID_ANY, u"Finances News", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.title = wx.StaticText( self.f_panel, wx.ID_ANY, self.customString.title, wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.title.Wrap( -1 )
 		self.title.SetFont( wx.Font( 20, 70, 90, 92, False, wx.EmptyString ) )
 
@@ -43,31 +45,31 @@ class Finances ( wx.Panel ):
 
 		bSizer4 = wx.BoxSizer( wx.HORIZONTAL )
 
-		self.Exit = wx.Button( self.f_panel, wx.ID_ANY, u"&Exit", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Exit = wx.Button( self.f_panel, wx.ID_ANY, self.customString.exit, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer4.Add( self.Exit, 0, wx.ALL, 5 )
 
-		self.Logout = wx.Button( self.f_panel, wx.ID_ANY, u"Logout", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Logout = wx.Button( self.f_panel, wx.ID_ANY, self.customString.logout, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer4.Add( self.Logout, 0, wx.ALL, 5 )
 
-		self.Home = wx.Button( self.f_panel, wx.ID_ANY, u"&Home", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Home = wx.Button( self.f_panel, wx.ID_ANY, self.customString.home, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer4.Add( self.Home, 0, wx.ALL, 5 )
 
-		self.News = wx.Button( self.f_panel, wx.ID_ANY, u"&News", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.News = wx.Button( self.f_panel, wx.ID_ANY, self.customString.news, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer4.Add( self.News, 0, wx.ALL, 5 )
 
-		self.Search_stock = wx.Button( self.f_panel, wx.ID_ANY, u"Search stock", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Search_stock = wx.Button( self.f_panel, wx.ID_ANY, self.customString.search, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer4.Add( self.Search_stock, 0, wx.ALL, 5 )
 
-		self.Monitoring_Stock = wx.Button( self.f_panel, wx.ID_ANY, u"Monitoring Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Monitoring_Stock = wx.Button( self.f_panel, wx.ID_ANY, self.customString.monitor, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer4.Add( self.Monitoring_Stock, 0, wx.ALL, 5 )
 
-		self.Setting = wx.Button( self.f_panel, wx.ID_ANY, u"Setting", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Setting = wx.Button( self.f_panel, wx.ID_ANY, self.customString.setting, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer4.Add( self.Setting, 0, wx.ALL, 5 )
 
-		self.About_Us = wx.Button( self.f_panel, wx.ID_ANY, u"About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.About_Us = wx.Button( self.f_panel, wx.ID_ANY, self.customString.about, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer4.Add( self.About_Us, 0, wx.ALL, 5 )
 
-		self.Admin = wx.Button( self.f_panel, wx.ID_ANY, u"Admin", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Admin = wx.Button( self.f_panel, wx.ID_ANY, self.customString.admin, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer4.Add( self.Admin, 0, wx.ALL, 5 )
 
 

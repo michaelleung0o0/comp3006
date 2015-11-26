@@ -9,6 +9,8 @@ from Forget_password import Forget_password
 from Setting import Setting
 from Finances import Finances
 from About_Us import About_Us
+
+from customString import customString
 # Login = None
 # Search_Stock = None
 # Monitoring_stock = None
@@ -23,6 +25,7 @@ from About_Us import About_Us
 class Login ( wx.Panel ):
 
 	def __init__( self, parent ):
+		self.customString = customString('login')
 		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,600 ), style = wx.TAB_TRAVERSAL )
 	# def __init__(self, *arg, **kwargs):
 		# super(Login, self).__init__(*arg, **kwargs)
@@ -41,7 +44,7 @@ class Login ( wx.Panel ):
 
 		bSizer2 = wx.BoxSizer( wx.VERTICAL )
 
-		self.m_staticText1 = wx.StaticText( self.lg_panel, wx.ID_ANY, u"Login", wx.Point( -1,-1 ), wx.Size( -1,-1 ), 0 )
+		self.m_staticText1 = wx.StaticText( self.lg_panel, wx.ID_ANY, self.customString.title, wx.Point( -1,-1 ), wx.Size( -1,-1 ), 0 )
 		self.m_staticText1.Wrap( -1 )
 		self.m_staticText1.SetFont( wx.Font( 36, 74, 90, 92, False, "Arial" ) )
 
@@ -64,7 +67,7 @@ class Login ( wx.Panel ):
 		fgSizer181.SetFlexibleDirection( wx.BOTH )
 		fgSizer181.SetNonFlexibleGrowMode( wx.FLEX_GROWMODE_SPECIFIED )
 
-		self.m_staticText51 = wx.StaticText( self.lg_panel, wx.ID_ANY, u"ID:", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText51 = wx.StaticText( self.lg_panel, wx.ID_ANY, self.customString.id, wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText51.Wrap( -1 )
 		fgSizer181.Add( self.m_staticText51, 0, wx.ALL, 5 )
 
@@ -73,7 +76,7 @@ class Login ( wx.Panel ):
 
 		fgSizer181.Add( self.m_textCtrl31, 0, wx.ALL, 5 )
 
-		self.m_staticText61 = wx.StaticText( self.lg_panel, wx.ID_ANY, u"Password:", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText61 = wx.StaticText( self.lg_panel, wx.ID_ANY, self.customString.pw, wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText61.Wrap( -1 )
 		fgSizer181.Add( self.m_staticText61, 0, wx.ALL, 5 )
 
@@ -90,13 +93,13 @@ class Login ( wx.Panel ):
 
 		bSizer5 = wx.BoxSizer( wx.HORIZONTAL )
 
-		self.login = wx.Button( self.lg_panel, wx.ID_ANY, u"&Login", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.login = wx.Button( self.lg_panel, wx.ID_ANY, self.customString.login, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer5.Add( self.login, 0, wx.ALL, 5 )
 
-		self.register = wx.Button( self.lg_panel, wx.ID_ANY, u"&Register", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.register = wx.Button( self.lg_panel, wx.ID_ANY, self.customString.reg, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer5.Add( self.register, 0, wx.ALL, 5 )
 
-		self.forgetPassword = wx.Button( self.lg_panel, wx.ID_ANY, u"&Forget Password", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.forgetPassword = wx.Button( self.lg_panel, wx.ID_ANY, self.customString.forgetpw, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer5.Add( self.forgetPassword, 0, wx.ALL, 5 )
 
 
@@ -106,7 +109,7 @@ class Login ( wx.Panel ):
 
 		bSizer7 = wx.BoxSizer( wx.VERTICAL )
 
-		self.Exit = wx.Button( self.lg_panel, wx.ID_ANY, u"&Exit", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Exit = wx.Button( self.lg_panel, wx.ID_ANY, self.customString.exit, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer7.Add( self.Exit, 0, wx.ALL, 5 )
 
 
@@ -114,13 +117,13 @@ class Login ( wx.Panel ):
 
 		bSizer8 = wx.BoxSizer( wx.HORIZONTAL )
 
-		self.Setting = wx.Button( self.lg_panel, wx.ID_ANY, u"Setting", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.Setting = wx.Button( self.lg_panel, wx.ID_ANY, self.customString.setting, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer8.Add( self.Setting, 0, wx.ALL, 5 )
 
-		self.About_Us = wx.Button( self.lg_panel, wx.ID_ANY, u"&About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.About_Us = wx.Button( self.lg_panel, wx.ID_ANY, self.customString.about, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer8.Add( self.About_Us, 0, wx.ALL, 5 )
 
-		self.News = wx.Button( self.lg_panel, wx.ID_ANY, u"&News", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.News = wx.Button( self.lg_panel, wx.ID_ANY, self.customString.news, wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer8.Add( self.News, 0, wx.ALL, 5 )
 
 

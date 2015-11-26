@@ -14,7 +14,7 @@ from customString import customString
 class About_Us ( wx.Frame ):
 
 	def __init__( self, parent ):
-                self.customString = customString('aboutus')
+        self.customString = customString('aboutus')
 		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = self.customString.title, pos = wx.DefaultPosition, size = wx.Size( 500,300 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 
 		self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
