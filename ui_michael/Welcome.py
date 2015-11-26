@@ -10,7 +10,12 @@ import sys
 # Monitoring_stock = None
 # finances = None
 # Admin = None
-
+# from Login import Login
+from Admin import Admin
+from Monitoring_stock import Monitoring_stock
+from Setting import Setting
+from Search_Stock import Search_Stock
+from About_Us import About_Us
 ###########################################################################
 ## Class Welcome
 ###########################################################################
@@ -109,8 +114,10 @@ class Welcome ( wx.Panel ):
 		sys.exit(0)
 
 	def onLogout( self, event ):
-		self.Hide()
-		Login.Show()
+		# self.Hide()
+		# Login.Show()
+		self.Close()
+		# self.Login = Login(self)
 
 	def onHome( self, event ):
 		self.Hide()
@@ -121,20 +128,26 @@ class Welcome ( wx.Panel ):
 		finances.Show()
 
 	def onSearch( self, event ):
-		self.Hide()
-		Search_Stock.Show()
+		# self.Hide()
+		self.Search_Stock = Search_Stock(self)
+		# Search_Stock.Show()
 
 	def onMonitoring( self, event ):
-		self.Hide()
-		Monitoring_stock.Show()
+		# self.Hide()
+		# Monitoring_stock.Show()
+		self.Monitoring_stock = Monitoring_stock(self)
+		self.Close()
 
 	def onSetting( self, event ):
 		self.Setting = Setting(self)
-		self.Setting.Show()
+		# self.Setting.Show()
 
 	def onAbout( self, event ):
-		event.Skip()
+		# event.Skip()
+		self.About_Us = About_Us(self)
 
 	def onAdmin( self, event ):
-		self.Hide()
-		Admin.Show()
+		# self.Hide()
+		# Admin.Show()
+		self.Close()
+		self.Admin = Admin(self)
