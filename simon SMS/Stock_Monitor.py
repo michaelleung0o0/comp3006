@@ -108,8 +108,8 @@ class Login_frame_1 ( wx.Frame ):
 		self.Setting = wx.Button( self.lg_panel, wx.ID_ANY, u"Setting", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer65.Add( self.Setting, 0, wx.ALL, 5 )
 		
-		self.About Us = wx.Button( self.lg_panel, wx.ID_ANY, u"&About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer65.Add( self.About Us, 0, wx.ALL, 5 )
+		self.About_Us = wx.Button( self.lg_panel, wx.ID_ANY, u"&About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer65.Add( self.About_Us, 0, wx.ALL, 5 )
 		
 		self.News = wx.Button( self.lg_panel, wx.ID_ANY, u"&News", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer65.Add( self.News, 0, wx.ALL, 5 )
@@ -138,7 +138,7 @@ class Login_frame_1 ( wx.Frame ):
 		self.forgetPassword.Bind( wx.EVT_BUTTON, self.onForgetPassword )
 		self.Exit.Bind( wx.EVT_BUTTON, self.onExit )
 		self.Setting.Bind( wx.EVT_BUTTON, self.onSetting )
-		self.About Us.Bind( wx.EVT_BUTTON, self.onAboutUs )
+		self.About_Us.Bind( wx.EVT_BUTTON, self.onAboutUs )
 		self.News.Bind( wx.EVT_BUTTON, self.onNews )
 	
 	def __del__( self ):
@@ -216,17 +216,17 @@ class Home_Frame_2 ( wx.Frame ):
 		self.News = wx.Button( self.lg_panel, wx.ID_ANY, u"&News", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.News, 0, wx.ALL, 5 )
 		
-		self.Search stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Search stock", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.Search stock, 0, wx.ALL, 5 )
+		self.Search_stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Search stock", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.Search_stock, 0, wx.ALL, 5 )
 		
-		self.Monitoring Stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Monitoring Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.Monitoring Stock, 0, wx.ALL, 5 )
+		self.Monitoring_Stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Monitoring Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.Monitoring_Stock, 0, wx.ALL, 5 )
 		
 		self.Setting = wx.Button( self.lg_panel, wx.ID_ANY, u"Setting", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.Setting, 0, wx.ALL, 5 )
 		
-		self.About Us = wx.Button( self.lg_panel, wx.ID_ANY, u"About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.About Us, 0, wx.ALL, 5 )
+		self.About_Us = wx.Button( self.lg_panel, wx.ID_ANY, u"About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.About_Us, 0, wx.ALL, 5 )
 		
 		self.Admin = wx.Button( self.lg_panel, wx.ID_ANY, u"Admin", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.Admin, 0, wx.ALL, 5 )
@@ -248,13 +248,13 @@ class Home_Frame_2 ( wx.Frame ):
 		
 		# Connect Events
 		self.Exit.Bind( wx.EVT_BUTTON, self.ExitOnButtonClick )
-		self.Home.Bind( wx.EVT_BUTTON, self.onLogin )
+		self.Home.Bind( wx.EVT_BUTTON, self.onHome )
 		self.News.Bind( wx.EVT_BUTTON, self.onNews )
-		self.Search stock.Bind( wx.EVT_BUTTON, self.onRegister )
-		self.Monitoring Stock.Bind( wx.EVT_BUTTON, self.onForgetPassword )
-		self.Setting.Bind( wx.EVT_BUTTON, self.onForgetPassword )
-		self.About Us.Bind( wx.EVT_BUTTON, self.onForgetPassword )
-		self.Admin.Bind( wx.EVT_BUTTON, self.onForgetPassword )
+		self.Search_stock.Bind( wx.EVT_BUTTON, self.onSearch )
+		self.Monitoring_Stock.Bind( wx.EVT_BUTTON, self.onMonitoring )
+		self.Setting.Bind( wx.EVT_BUTTON, self.onSetting )
+		self.About_Us.Bind( wx.EVT_BUTTON, self.onAbout )
+		self.Admin.Bind( wx.EVT_BUTTON, self.onAdmin )
 	
 	def __del__( self ):
 		pass
@@ -264,20 +264,26 @@ class Home_Frame_2 ( wx.Frame ):
 	def ExitOnButtonClick( self, event ):
 		event.Skip()
 	
-	def onLogin( self, event ):
+	def onHome( self, event ):
 		event.Skip()
 	
 	def onNews( self, event ):
 		event.Skip()
 	
-	def onRegister( self, event ):
+	def onSearch( self, event ):
 		event.Skip()
 	
-	def onForgetPassword( self, event ):
+	def onMonitoring( self, event ):
 		event.Skip()
 	
+	def onSetting( self, event ):
+		event.Skip()
 	
+	def onAbout( self, event ):
+		event.Skip()
 	
+	def onAdmin( self, event ):
+		event.Skip()
 	
 
 ###########################################################################
@@ -308,68 +314,13 @@ class News_Frame_3 ( wx.Frame ):
 		
 		bSizer45.Add( bSizer59, 0, wx.ALIGN_CENTER_HORIZONTAL, 5 )
 		
-		bSizer441 = wx.BoxSizer( wx.VERTICAL )
+		bSizer54 = wx.BoxSizer( wx.VERTICAL )
 		
-		bSizer441.SetMinSize( wx.Size( -1,400 ) ) 
-		self.news[0] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[0], 0, wx.ALL, 5 )
-		
-		self.news[1] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[1], 0, wx.ALL, 5 )
-		
-		self.news[2] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[2], 0, wx.ALL, 5 )
-		
-		self.news[3] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[3], 0, wx.ALL, 5 )
-		
-		self.news[4] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[4], 0, wx.ALL, 5 )
-		
-		self.news[5] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[5], 0, wx.ALL, 5 )
-		
-		self.news[6] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[6], 0, wx.ALL, 5 )
-		
-		self.news[7] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[7], 0, wx.ALL, 5 )
-		
-		self.news[8] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[8], 0, wx.ALL, 5 )
-		
-		self.news[9] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[9], 0, wx.ALL, 5 )
-		
-		self.news[10] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[10], 0, wx.ALL, 5 )
-		
-		self.news[11] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[11], 0, wx.ALL, 5 )
-		
-		self.news[12] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[12], 0, wx.ALL, 5 )
-		
-		self.news[13] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[13], 0, wx.ALL, 5 )
-		
-		self.news[14] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[14], 0, wx.ALL, 5 )
-		
-		self.news[15] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[15], 0, wx.ALL, 5 )
-		
-		self.news[16] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[16], 0, wx.ALL, 5 )
-		
-		self.news[17] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[17], 0, wx.ALL, 5 )
-		
-		self.news[18] = wx.HyperlinkCtrl( self.lg_panel, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		bSizer441.Add( self.news[18], 0, wx.ALL, 5 )
+		self.m_richText2 = wx.richtext.RichTextCtrl( self.lg_panel, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
+		bSizer54.Add( self.m_richText2, 1, wx.EXPAND |wx.ALL, 5 )
 		
 		
-		bSizer45.Add( bSizer441, 1, wx.EXPAND, 5 )
+		bSizer45.Add( bSizer54, 1, wx.EXPAND, 5 )
 		
 		bSizer301 = wx.BoxSizer( wx.HORIZONTAL )
 		
@@ -382,17 +333,17 @@ class News_Frame_3 ( wx.Frame ):
 		self.News = wx.Button( self.lg_panel, wx.ID_ANY, u"&News", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.News, 0, wx.ALL, 5 )
 		
-		self.Search stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Search stock", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.Search stock, 0, wx.ALL, 5 )
+		self.Search_stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Search stock", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.Search_stock, 0, wx.ALL, 5 )
 		
-		self.Monitoring Stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Monitoring Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.Monitoring Stock, 0, wx.ALL, 5 )
+		self.Monitoring_Stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Monitoring Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.Monitoring_Stock, 0, wx.ALL, 5 )
 		
 		self.Setting = wx.Button( self.lg_panel, wx.ID_ANY, u"Setting", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.Setting, 0, wx.ALL, 5 )
 		
-		self.About Us = wx.Button( self.lg_panel, wx.ID_ANY, u"About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.About Us, 0, wx.ALL, 5 )
+		self.About_Us = wx.Button( self.lg_panel, wx.ID_ANY, u"About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.About_Us, 0, wx.ALL, 5 )
 		
 		self.Admin = wx.Button( self.lg_panel, wx.ID_ANY, u"Admin", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.Admin, 0, wx.ALL, 5 )
@@ -413,28 +364,20 @@ class News_Frame_3 ( wx.Frame ):
 		self.Centre( wx.BOTH )
 		
 		# Connect Events
-		self.news[0].Bind( wx.EVT_HYPERLINK, self.onHyperlink[0] )
-		self.news[1].Bind( wx.EVT_HYPERLINK, self.onHyperlink[1] )
 		self.Exit.Bind( wx.EVT_BUTTON, self.ExitOnButtonClick )
 		self.Home.Bind( wx.EVT_BUTTON, self.onLogin )
 		self.News.Bind( wx.EVT_BUTTON, self.onNews )
-		self.Search stock.Bind( wx.EVT_BUTTON, self.onRegister )
-		self.Monitoring Stock.Bind( wx.EVT_BUTTON, self.onForgetPassword )
-		self.Setting.Bind( wx.EVT_BUTTON, self.onForgetPassword )
-		self.About Us.Bind( wx.EVT_BUTTON, self.onForgetPassword )
-		self.Admin.Bind( wx.EVT_BUTTON, self.onForgetPassword )
+		self.Search_stock.Bind( wx.EVT_BUTTON, self.onSearch )
+		self.Monitoring_Stock.Bind( wx.EVT_BUTTON, self.onMonitoring )
+		self.Setting.Bind( wx.EVT_BUTTON, self.onSetting )
+		self.About_Us.Bind( wx.EVT_BUTTON, self.onAbout )
+		self.Admin.Bind( wx.EVT_BUTTON, self.onAdmin )
 	
 	def __del__( self ):
 		pass
 	
 	
 	# Virtual event handlers, overide them in your derived class
-	def onHyperlink[0]( self, event ):
-		event.Skip()
-	
-	def onHyperlink[1]( self, event ):
-		event.Skip()
-	
 	def ExitOnButtonClick( self, event ):
 		event.Skip()
 	
@@ -444,14 +387,20 @@ class News_Frame_3 ( wx.Frame ):
 	def onNews( self, event ):
 		event.Skip()
 	
-	def onRegister( self, event ):
+	def onSearch( self, event ):
 		event.Skip()
 	
-	def onForgetPassword( self, event ):
+	def onMonitoring( self, event ):
 		event.Skip()
 	
+	def onSetting( self, event ):
+		event.Skip()
 	
+	def onAbout( self, event ):
+		event.Skip()
 	
+	def onAdmin( self, event ):
+		event.Skip()
 	
 
 ###########################################################################
@@ -534,17 +483,17 @@ class Search_stock_Frame_4 ( wx.Frame ):
 		self.News = wx.Button( self.lg_panel, wx.ID_ANY, u"&News", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.News, 0, wx.ALL, 5 )
 		
-		self.Search stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Search stock", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.Search stock, 0, wx.ALL, 5 )
+		self.Search_stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Search stock", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.Search_stock, 0, wx.ALL, 5 )
 		
-		self.Monitoring Stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Monitoring Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.Monitoring Stock, 0, wx.ALL, 5 )
+		self.Monitoring_Stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Monitoring Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.Monitoring_Stock, 0, wx.ALL, 5 )
 		
 		self.Setting = wx.Button( self.lg_panel, wx.ID_ANY, u"Setting", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.Setting, 0, wx.ALL, 5 )
 		
-		self.About Us = wx.Button( self.lg_panel, wx.ID_ANY, u"About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.About Us, 0, wx.ALL, 5 )
+		self.About_Us = wx.Button( self.lg_panel, wx.ID_ANY, u"About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.About_Us, 0, wx.ALL, 5 )
 		
 		self.Admin = wx.Button( self.lg_panel, wx.ID_ANY, u"Admin", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.Admin, 0, wx.ALL, 5 )
@@ -565,20 +514,26 @@ class Search_stock_Frame_4 ( wx.Frame ):
 		self.Centre( wx.BOTH )
 		
 		# Connect Events
+		self.m_searchCtrl2.Bind( wx.EVT_SEARCHCTRL_SEARCH_BTN, self.Search )
+		self.m_searchCtrl2.Bind( wx.EVT_TEXT_ENTER, self.Search )
 		self.Exit.Bind( wx.EVT_BUTTON, self.ExitOnButtonClick )
 		self.Home.Bind( wx.EVT_BUTTON, self.onLogin )
 		self.News.Bind( wx.EVT_BUTTON, self.onNews )
-		self.Search stock.Bind( wx.EVT_BUTTON, self.onRegister )
-		self.Monitoring Stock.Bind( wx.EVT_BUTTON, self.onForgetPassword )
-		self.Setting.Bind( wx.EVT_BUTTON, self.onForgetPassword )
-		self.About Us.Bind( wx.EVT_BUTTON, self.onForgetPassword )
-		self.Admin.Bind( wx.EVT_BUTTON, self.onForgetPassword )
+		self.Search_stock.Bind( wx.EVT_BUTTON, self.onSearch )
+		self.Monitoring_Stock.Bind( wx.EVT_BUTTON, self.onMonitoring )
+		self.Setting.Bind( wx.EVT_BUTTON, self.onSetting )
+		self.About_Us.Bind( wx.EVT_BUTTON, self.onAbout )
+		self.Admin.Bind( wx.EVT_BUTTON, self.onAbout )
 	
 	def __del__( self ):
 		pass
 	
 	
 	# Virtual event handlers, overide them in your derived class
+	def Search( self, event ):
+		event.Skip()
+	
+	
 	def ExitOnButtonClick( self, event ):
 		event.Skip()
 	
@@ -588,13 +543,17 @@ class Search_stock_Frame_4 ( wx.Frame ):
 	def onNews( self, event ):
 		event.Skip()
 	
-	def onRegister( self, event ):
+	def onSearch( self, event ):
 		event.Skip()
 	
-	def onForgetPassword( self, event ):
+	def onMonitoring( self, event ):
 		event.Skip()
 	
+	def onSetting( self, event ):
+		event.Skip()
 	
+	def onAbout( self, event ):
+		event.Skip()
 	
 	
 
@@ -646,17 +605,17 @@ class Monitoring_Frame_5 ( wx.Frame ):
 		self.News = wx.Button( self.lg_panel, wx.ID_ANY, u"&News", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.News, 0, wx.ALL, 5 )
 		
-		self.Search stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Search stock", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.Search stock, 0, wx.ALL, 5 )
+		self.Search_stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Search stock", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.Search_stock, 0, wx.ALL, 5 )
 		
-		self.Monitoring Stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Monitoring Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.Monitoring Stock, 0, wx.ALL, 5 )
+		self.Monitoring_Stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Monitoring Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.Monitoring_Stock, 0, wx.ALL, 5 )
 		
 		self.Setting = wx.Button( self.lg_panel, wx.ID_ANY, u"Setting", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.Setting, 0, wx.ALL, 5 )
 		
-		self.About Us = wx.Button( self.lg_panel, wx.ID_ANY, u"About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.About Us, 0, wx.ALL, 5 )
+		self.About_Us = wx.Button( self.lg_panel, wx.ID_ANY, u"About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.About_Us, 0, wx.ALL, 5 )
 		
 		self.Admin = wx.Button( self.lg_panel, wx.ID_ANY, u"Admin", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.Admin, 0, wx.ALL, 5 )
@@ -680,10 +639,10 @@ class Monitoring_Frame_5 ( wx.Frame ):
 		self.Exit.Bind( wx.EVT_BUTTON, self.ExitOnButtonClick )
 		self.Home.Bind( wx.EVT_BUTTON, self.onLogin )
 		self.News.Bind( wx.EVT_BUTTON, self.onNews )
-		self.Search stock.Bind( wx.EVT_BUTTON, self.onRegister )
-		self.Monitoring Stock.Bind( wx.EVT_BUTTON, self.onForgetPassword )
+		self.Search_stock.Bind( wx.EVT_BUTTON, self.onRegister )
+		self.Monitoring_Stock.Bind( wx.EVT_BUTTON, self.onForgetPassword )
 		self.Setting.Bind( wx.EVT_BUTTON, self.onForgetPassword )
-		self.About Us.Bind( wx.EVT_BUTTON, self.onForgetPassword )
+		self.About_Us.Bind( wx.EVT_BUTTON, self.onForgetPassword )
 		self.Admin.Bind( wx.EVT_BUTTON, self.onForgetPassword )
 	
 	def __del__( self ):
@@ -758,17 +717,17 @@ class Admin_6 ( wx.Frame ):
 		self.News = wx.Button( self.lg_panel, wx.ID_ANY, u"&News", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.News, 0, wx.ALL, 5 )
 		
-		self.Search stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Search stock", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.Search stock, 0, wx.ALL, 5 )
+		self.Search_Stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Search stock", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.Search_Stock, 0, wx.ALL, 5 )
 		
-		self.Monitoring Stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Monitoring Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.Monitoring Stock, 0, wx.ALL, 5 )
+		self.Monitoring_Stock = wx.Button( self.lg_panel, wx.ID_ANY, u"Monitoring Stock", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.Monitoring_Stock, 0, wx.ALL, 5 )
 		
 		self.Setting = wx.Button( self.lg_panel, wx.ID_ANY, u"Setting", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.Setting, 0, wx.ALL, 5 )
 		
-		self.About Us = wx.Button( self.lg_panel, wx.ID_ANY, u"About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer301.Add( self.About Us, 0, wx.ALL, 5 )
+		self.About_Us = wx.Button( self.lg_panel, wx.ID_ANY, u"About Us", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer301.Add( self.About_Us, 0, wx.ALL, 5 )
 		
 		self.Admin = wx.Button( self.lg_panel, wx.ID_ANY, u"Admin", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer301.Add( self.Admin, 0, wx.ALL, 5 )
@@ -789,20 +748,24 @@ class Admin_6 ( wx.Frame ):
 		self.Centre( wx.BOTH )
 		
 		# Connect Events
+		self.m_choicebook2.Bind( wx.EVT_CHOICEBOOK_PAGE_CHANGED, self.DisplayPage )
 		self.Exit.Bind( wx.EVT_BUTTON, self.ExitOnButtonClick )
 		self.Home.Bind( wx.EVT_BUTTON, self.onLogin )
 		self.News.Bind( wx.EVT_BUTTON, self.onNews )
-		self.Search stock.Bind( wx.EVT_BUTTON, self.onRegister )
-		self.Monitoring Stock.Bind( wx.EVT_BUTTON, self.onForgetPassword )
-		self.Setting.Bind( wx.EVT_BUTTON, self.onForgetPassword )
-		self.About Us.Bind( wx.EVT_BUTTON, self.onForgetPassword )
-		self.Admin.Bind( wx.EVT_BUTTON, self.onForgetPassword )
+		self.Search_Stock.Bind( wx.EVT_BUTTON, self.onSearch )
+		self.Monitoring_Stock.Bind( wx.EVT_BUTTON, self.onMonitioring )
+		self.Setting.Bind( wx.EVT_BUTTON, self.onSetting )
+		self.About_Us.Bind( wx.EVT_BUTTON, self.onAbout )
+		self.Admin.Bind( wx.EVT_BUTTON, self.onAdmin )
 	
 	def __del__( self ):
 		pass
 	
 	
 	# Virtual event handlers, overide them in your derived class
+	def DisplayPage( self, event ):
+		event.Skip()
+	
 	def ExitOnButtonClick( self, event ):
 		event.Skip()
 	
@@ -812,14 +775,20 @@ class Admin_6 ( wx.Frame ):
 	def onNews( self, event ):
 		event.Skip()
 	
-	def onRegister( self, event ):
+	def onSearch( self, event ):
 		event.Skip()
 	
-	def onForgetPassword( self, event ):
+	def onMonitioring( self, event ):
 		event.Skip()
 	
+	def onSetting( self, event ):
+		event.Skip()
 	
+	def onAbout( self, event ):
+		event.Skip()
 	
+	def onAdmin( self, event ):
+		event.Skip()
 	
 
 ###########################################################################
@@ -859,9 +828,19 @@ class User_Admin ( wx.Panel ):
 		
 		self.SetSizer( bSizer69 )
 		self.Layout()
+		
+		# Connect Events
+		self.Admin_Search.Bind( wx.EVT_SEARCHCTRL_SEARCH_BTN, self.Search )
+		self.Admin_Search.Bind( wx.EVT_TEXT_ENTER, self.Search )
 	
 	def __del__( self ):
 		pass
+	
+	
+	# Virtual event handlers, overide them in your derived class
+	def Search( self, event ):
+		event.Skip()
+	
 	
 
 ###########################################################################
@@ -928,20 +907,27 @@ class Setting ( wx.Frame ):
 		
 		bSizer81 = wx.BoxSizer( wx.HORIZONTAL )
 		
-		m_radioBox4Choices = [ u"Positive : Green; Negative : Red", u"Positive : Red; Negative : Green" ]
-		self.m_radioBox4 = wx.RadioBox( self.m_panel15, wx.ID_ANY, u"wxRadioBox", wx.DefaultPosition, wx.DefaultSize, m_radioBox4Choices, 1, wx.RA_SPECIFY_COLS )
-		self.m_radioBox4.SetSelection( 0 )
+		m_radioBox4Choices = [ u"Increase : Green; Decrease : Red", u"Increase : Red;    Decrease : Green" ]
+		self.m_radioBox4 = wx.RadioBox( self.m_panel15, wx.ID_ANY, u"Arrow Color", wx.DefaultPosition, wx.DefaultSize, m_radioBox4Choices, 1, wx.RA_SPECIFY_COLS )
+		self.m_radioBox4.SetSelection( 1 )
 		bSizer81.Add( self.m_radioBox4, 1, wx.ALL, 5 )
 		
-		sbSizer8 = wx.StaticBoxSizer( wx.StaticBox( self.m_panel15, wx.ID_ANY, u"label" ), wx.HORIZONTAL )
+		sbSizer8 = wx.StaticBoxSizer( wx.StaticBox( self.m_panel15, wx.ID_ANY, u"Monitoring Refresh Rate" ), wx.VERTICAL )
 		
-		m_choice2Choices = [ u"0.5 seconds", u"1    seconds", u"2    seconds" ]
-		self.m_choice2 = wx.Choice( sbSizer8.GetStaticBox(), wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, m_choice2Choices, 0 )
-		self.m_choice2.SetSelection( 0 )
-		sbSizer8.Add( self.m_choice2, 0, wx.ALL, 5 )
+		bSizer55 = wx.BoxSizer( wx.HORIZONTAL )
 		
-		self.m_button98 = wx.Button( sbSizer8.GetStaticBox(), wx.ID_ANY, u"&Summits", wx.DefaultPosition, wx.DefaultSize, 0 )
-		sbSizer8.Add( self.m_button98, 0, wx.ALL, 5 )
+		self.m_textCtrl13 = wx.TextCtrl( sbSizer8.GetStaticBox(), wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer55.Add( self.m_textCtrl13, 0, wx.ALL, 5 )
+		
+		self.m_staticText24 = wx.StaticText( sbSizer8.GetStaticBox(), wx.ID_ANY, u"sec/time", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText24.Wrap( -1 )
+		bSizer55.Add( self.m_staticText24, 0, wx.TOP|wx.BOTTOM, 5 )
+		
+		
+		sbSizer8.Add( bSizer55, 1, wx.EXPAND, 5 )
+		
+		self.m_button98 = wx.Button( sbSizer8.GetStaticBox(), wx.ID_ANY, u"&Apply", wx.DefaultPosition, wx.DefaultSize, 0 )
+		sbSizer8.Add( self.m_button98, 0, wx.ALL|wx.ALIGN_RIGHT, 5 )
 		
 		
 		bSizer81.Add( sbSizer8, 1, wx.EXPAND, 5 )
@@ -985,23 +971,30 @@ class Setting ( wx.Frame ):
 		fgSizer4.SetFlexibleDirection( wx.VERTICAL )
 		fgSizer4.SetNonFlexibleGrowMode( wx.FLEX_GROWMODE_ALL )
 		
-		self.m_staticText25 = wx.StaticText( self.m_panel15, wx.ID_ANY, u"ID:", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText25 = wx.StaticText( self.m_panel15, wx.ID_ANY, u"UID:", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText25.Wrap( -1 )
 		fgSizer4.Add( self.m_staticText25, 0, wx.ALL|wx.ALIGN_RIGHT, 5 )
+		
+		self.ID_ctrl1 = wx.TextCtrl( self.m_panel15, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, wx.TE_READONLY )
+		fgSizer4.Add( self.ID_ctrl1, 0, wx.ALL, 5 )
+		
+		self.m_staticText251 = wx.StaticText( self.m_panel15, wx.ID_ANY, u"Username:", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText251.Wrap( -1 )
+		fgSizer4.Add( self.m_staticText251, 0, wx.ALL|wx.ALIGN_RIGHT, 5 )
 		
 		self.ID_ctrl = wx.TextCtrl( self.m_panel15, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, wx.TE_READONLY )
 		fgSizer4.Add( self.ID_ctrl, 1, wx.ALL, 5 )
 		
-		self.OLD Password = wx.StaticText( self.m_panel15, wx.ID_ANY, u"OLD Password:", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.OLD Password.Wrap( -1 )
-		fgSizer4.Add( self.OLD Password, 0, wx.ALL|wx.ALIGN_RIGHT, 5 )
+		self.OLDPassword = wx.StaticText( self.m_panel15, wx.ID_ANY, u"OLD Password:", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.OLDPassword.Wrap( -1 )
+		fgSizer4.Add( self.OLDPassword, 0, wx.ALL|wx.ALIGN_RIGHT, 5 )
 		
 		self.OPW_ctrl = wx.TextCtrl( self.m_panel15, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, wx.TE_PASSWORD )
 		fgSizer4.Add( self.OPW_ctrl, 0, wx.ALL, 5 )
 		
-		self.m_staticText33 = wx.StaticText( self.m_panel15, wx.ID_ANY, u"New Password:", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_staticText33.Wrap( -1 )
-		fgSizer4.Add( self.m_staticText33, 0, wx.ALL|wx.ALIGN_RIGHT, 5 )
+		self.New_Password = wx.StaticText( self.m_panel15, wx.ID_ANY, u"New Password:", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.New_Password.Wrap( -1 )
+		fgSizer4.Add( self.New_Password, 0, wx.ALL|wx.ALIGN_RIGHT, 5 )
 		
 		self.NPW_ctrl = wx.TextCtrl( self.m_panel15, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, wx.TE_PASSWORD )
 		fgSizer4.Add( self.NPW_ctrl, 0, wx.ALL, 5 )
@@ -1091,3 +1084,29 @@ class Setting ( wx.Frame ):
 		event.Skip()
 	
 
+
+###########################################################################
+## Index Page
+###########################################################################
+
+class IndexPage ( wx.Frame ):
+    def __init__( self, parent ):
+        wx.Frame.__init__ ( self, parent, id = wx.ID_ANY)
+        self.Login_frame_1 = Login_frame_1.__init__( self, parent )
+        self.Home_Frame_2 = Home_Frame_2.__init__( self, parent )
+        self.News_Frame_3 = News_Frame_3.__init__( self, parent )
+        self.Search_stock_Frame_4 = Search_stock_Frame_4.__init__( self, parent )
+        self.Monitoring_Frame_5 = Monitoring_Frame_5.__init__( self, parent )
+        self.Admin_6 = Admin_6.__init__( self, parent )
+        #self.User_Admin = User_Admin (self)
+        #self.Statistics = Statistics (self)
+        #self.Setting = Setting (self)
+        
+        self.Home_Frame_2.Hide()
+        self.News_Frame_3.Hide()
+        self.Search_stock_Frame_4.Hide()
+        self.Monitoring_Frame_5.Hide()
+        self.Admin_6.Hide()
+        #self.User_Admin.Hide()
+        #self.Statistics.Hide()
+        #self.Setting.Hide()
