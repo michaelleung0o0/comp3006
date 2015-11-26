@@ -10,7 +10,7 @@ class customString:
         if case == 'aboutus':
             self.title = u'About Us'
             self.exit = u'&Exit'
-            self.content = 'This system is developed by 404 NOT FOUND team from Hong Kong Baptist University.\n404 NOT FOUND:\n12210102 MAK KIT TIN\n15208249 LEUNG KAI HIN'
+            self.content = 'This system is developed by 404 NOT FOUND team from Hong Kong Baptist University.\n 404 NOT FOUND:\n13207296 YEUNG MAN KIT\n13205633 CHAN WING SUN\n12210102 MAK KIT TIN\n15208249 LEUNG KAI HIN'
         if case == 'reg':
             self.title = u'Register'
             self.id = u'ID: '
