@@ -3,15 +3,6 @@ import wx.xrc
 import wx.richtext
 import sys
 
-# Finances_L = None
-# Login = None
-# Welcome = None
-# Search_Stock = None
-# Monitoring_stock = None
-# finances = None
-# Admin = None
-# from Login import Login
-
 from Admin import Admin
 from Monitoring_stock import Monitoring_stock
 from Setting import Setting

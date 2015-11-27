@@ -11,12 +11,6 @@ from Finances import Finances
 from About_Us import About_Us
 
 from customString import customString
-# Login = None
-# Search_Stock = None
-# Monitoring_stock = None
-# finances = None
-# Admin = None
-
 
 ###########################################################################
 ## Class Login
@@ -166,7 +160,7 @@ class Login ( wx.Panel ):
 	def onlogin( self, event ):
 		self.Close()
 		self.Welcome = Welcome(self)
-		self.Welcome.show()
+		# self.Welcome.show()
 		# Welcome.Show()
 
 
@@ -197,5 +191,5 @@ class Login ( wx.Panel ):
 		# self.Hide()
 		self.Close()
 		self.Finances = Finances(self)
-		self.Finances.Show()
+		# self.Finances.Show()
 		# Finances_L.Show()

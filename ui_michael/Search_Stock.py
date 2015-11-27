@@ -3,14 +3,7 @@ import wx.xrc
 import wx.richtext
 import sys
 from customString import customString
-
-# Finances_L = None
-# Login = None
-# Welcome = None
-# Search_Stock = None
-# Monitoring_stock = None
-# finances = None
-# Admin = None
+from apiRequest import apiRequest
 
 ###########################################################################
 ## Class Search_Stock
@@ -20,6 +13,10 @@ class Search_Stock ( wx.Panel ):
 
 	def __init__( self, parent ):
 		self.customString = customString('search')
+
+		self.apiRequest = apiRequest(self)
+		price = apiRequest.GetEnglishName
+
 		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,600 ), style = wx.TAB_TRAVERSAL )
 
 		self.SetMinSize( wx.Size( 900,600 ) )
@@ -71,7 +68,7 @@ class Search_Stock ( wx.Panel ):
 
 		bSizer6 = wx.BoxSizer( wx.VERTICAL )
 
-		self.displaySearchResult = wx.richtext.RichTextCtrl( self.DisplaySearchResult, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
+		self.displaySearchResult = wx.richtext.RichTextCtrl( self.DisplaySearchResult, wx.ID_ANY, str(price), wx.DefaultPosition, wx.DefaultSize, 0|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
 		self.displaySearchResult.SetMinSize( wx.Size( -1,700 ) )
 
 		bSizer6.Add( self.displaySearchResult, 1, wx.EXPAND |wx.ALL, 5 )
