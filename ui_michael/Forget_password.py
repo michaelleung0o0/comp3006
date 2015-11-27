@@ -3,7 +3,13 @@ import wx.xrc
 import wx.richtext
 import sys
 from customString import customString
-
+# Finances_L = None
+# Login = None
+# Welcome = None
+# Search_Stock = None
+# Monitoring_stock = None
+# finances = None
+# Admin = None
 ###########################################################################
 ## Class Forget_password
 ###########################################################################

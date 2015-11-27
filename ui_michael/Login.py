@@ -11,6 +11,12 @@ from FinancesL import FinancesL
 from About_Us import About_Us
 
 from customString import customString
+# Login = None
+# Search_Stock = None
+# Monitoring_stock = None
+# finances = None
+# Admin = None
+
 
 ###########################################################################
 ## Class Login
@@ -154,8 +160,8 @@ class Login ( wx.Panel ):
 	# Virtual event handlers, overide them in your derived class
 	def onlogin( self, event ):
 		self.Close()
-		self.Welcome = Welcome(self)
-		# self.Welcome.show()
+		self.Hide()
+
 		# Welcome.Show()
 
 
@@ -179,11 +185,6 @@ class Login ( wx.Panel ):
 		self.About_Us.Show()
 	def onNews( self, event ):
 		self.Close()
-<<<<<<< HEAD
 		self.FinancesL = FinancesL(self)
 		self.FinancesL.Show()
-=======
-		self.Finances = Finances(self)
-		# self.Finances.Show()
->>>>>>> origin/master
 		# Finances_L.Show()

@@ -5,7 +5,7 @@ class readNews():
     #xmlReader = None
 
     def __init__(self, url):
-        self.xmlread = xmlReader(url,'news.xml')
+        self.xmlread = xmlReader(url,'','news.xml')
         self.xmlread.requestXML()
 
     def displayAllXML(self):

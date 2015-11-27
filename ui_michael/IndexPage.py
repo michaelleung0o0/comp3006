@@ -14,7 +14,7 @@ from Finances import Finances
 from Admin import Admin
 from About_Us import About_Us
 
-num = 0;
+num = 5;
 Finances_L = None
 login = None
 welcome = None
@@ -76,6 +76,9 @@ class IndexPage ( wx.Frame ):
 		bSizer1.Fit( self.w_panel )
 		bSizerFrame.Add( self.w_panel, 1, wx.EXPAND |wx.ALL, 5 )
 		
+		global welcome
+		welcome = Welcome( self )
+		welcome.Show()
 		
 		self.SetSizer( bSizerFrame )
 		self.Layout()
@@ -102,13 +105,15 @@ class IndexPage ( wx.Frame ):
 		sys.exit(0)
 	
 	def onLogout( self, event ):
-		self.Hide()
-		Login.Show()
-
-
-
-
-
+		self.destroyall( self )
+		global welcome
+		welcome = Welcome( self )
+		welcome.Show()
+		global login
+		login = Login(self)
+		login.Show()
+		global num
+		num = 5
 
 	def onNews(  self ,event ):
 		self.destroyall( self )

@@ -3,7 +3,6 @@ import wx.xrc
 import wx.richtext
 import sys
 
-<<<<<<< HEAD
 # Finances_L = None
 # Login = None
 # Welcome = None
@@ -13,13 +12,6 @@ import sys
 # Admin = None
 # from Login import Login
 
-=======
-from Admin import Admin
-from Monitoring_stock import Monitoring_stock
-from Setting import Setting
-from Search_Stock import Search_Stock
-from About_Us import About_Us
->>>>>>> origin/master
 from customString import customString
 #from IndexPage import IndexPage
 

@@ -8,6 +8,9 @@ from customString import customString
 ###########################################################################
 ## Class About_Us
 ###########################################################################
+
+
+
 class About_Us ( wx.Frame ):
 
 	def __init__( self, parent ):
