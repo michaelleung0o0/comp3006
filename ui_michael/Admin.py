@@ -28,6 +28,13 @@ class Admin ( wx.Panel ):
 		self.a_panel = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( -1,-1 ), wx.TAB_TRAVERSAL )
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 
+		try:
+			image_file = 'bg.jpg'
+			bmp = wx.Image(image_file, wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+			self.bitmap = wx.StaticBitmap(self.a_panel, -1, bmp, (0,0))
+		except IOError:
+			raise SystemExit
+
 		bSizer2 = wx.BoxSizer( wx.VERTICAL )
 
 		self.title = wx.StaticText( self.a_panel, wx.ID_ANY, self.customString.title, wx.DefaultPosition, wx.DefaultSize, 0 )

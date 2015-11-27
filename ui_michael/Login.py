@@ -38,6 +38,13 @@ class Login ( wx.Panel ):
 		self.lg_panel.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_MENU ) )
 
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
+		try:
+			image_file = 'bg.jpg'
+			bmp = wx.Image(image_file, wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+			self.bitmap = wx.StaticBitmap(self.lg_panel, -1, bmp, (0,0))
+		except IOError:
+			raise SystemExit
+
 
 
 		bSizer1.AddSpacer( ( 0, 0), 1, wx.EXPAND, 5 )
