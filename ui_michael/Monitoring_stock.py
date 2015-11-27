@@ -28,12 +28,6 @@ class Monitoring_stock ( wx.Panel ):
 		self.m_panel = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( -1,-1 ), wx.TAB_TRAVERSAL )
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 
-		try:
-			image_file = 'bg.jpg'
-			bmp = wx.Image(image_file, wx.BITMAP_TYPE_ANY).ConvertToBitmap()
-			self.bitmap = wx.StaticBitmap(self.m_panel, -1, bmp, (0,0))
-		except IOError:
-			raise SystemExit
 
 		bSizer2 = wx.BoxSizer( wx.VERTICAL )
 
