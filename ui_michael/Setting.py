@@ -189,6 +189,7 @@ class Setting ( wx.Frame ):
 
 	def onSave( self, event ):
 		event.Skip()
+		self.Destroy()
 
 	def onCancel( self, event ):
 		self.Destroy()

@@ -3,13 +3,12 @@ import wx.xrc
 import wx.richtext
 import sys
 from customString import customString
-# Finances_L = None
-# Login = None
-# Welcome = None
-# Search_Stock = None
-# Monitoring_stock = None
-# finances = None
-# Admin = None
+
+from Register import Register
+from Forget_password import Forget_password
+from Setting import Setting
+from FinancesL import FinancesL
+from About_Us import About_Us
 
 ###########################################################################
 ## Class Admin
@@ -19,7 +18,7 @@ class Admin ( wx.Panel ):
 
 	def __init__( self, parent ):
 		self.customString = customString('admin')
-		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,600 ), style = wx.TAB_TRAVERSAL )
+		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,570 ), style = wx.TAB_TRAVERSAL )
 
 		self.SetMinSize( wx.Size( 900,600 ) )
 
@@ -173,23 +172,28 @@ class Admin ( wx.Panel ):
 		sys.exit(0)
 
 	def onLogout( self, event ):
-		self.Hide()
+		self.Close()
+		self.Login = Login(self)
 		Login.Show()
 
 	def onHome( self, event ):
-		self.Hide()
+		self.Close()
+		self.Welcome = Welcome(self)
 		Welcome.Show()
 
 	def onNews( self, event ):
-		self.Hide()
-		finances.Show()
+		self.Close()
+		self.Finances = Finances(self)
+		Finances.Show()
 
 	def onSearch( self, event ):
-		self.Hide()
-		Search_Stock.Show()
+		self.Close()
+		self.Search_stock = Search_stock(self)
+		Search_stock.Show()
 
 	def onMonitoring( self, event ):
-		self.Hide()
+		self.Close()
+		self.Monitoring_stock = Monitoring_stock(self)
 		Monitoring_stock.Show()
 
 	def onSetting( self, event ):
@@ -197,8 +201,9 @@ class Admin ( wx.Panel ):
 		self.Setting.Show()
 
 	def onAbout( self, event ):
-		event.Skip()
+		self.About_Us = About_Us(self)
+		self.About_Us.Show()
 
 	def onAdmin( self, event ):
-		self.Hide()
+		self.Close()
 		Admin.Show()

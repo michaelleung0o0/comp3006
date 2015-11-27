@@ -9,20 +9,20 @@
 	<english><![CDATA[CKH HOLDINGS]]></english>
 </name>
 <sspn>N</sspn>
-<price>102.300</price>
-<change>-0.600</change>
-<pct_change><![CDATA[-0.583%]]></pct_change>
+<price>101.200</price>
+<change>-1.700</change>
+<pct_change><![CDATA[-1.652%]]></pct_change>
 <pexit>102.90</pexit>
 <open>103.000</open>
 <high>103.300</high>
-<low>102.000</low>
+<low>101.100</low>
 <bid></bid>
 <ask></ask>
 <year_high>174.90</year_high>
 <year_low>97.50</year_low>
-<volume>1630106</volume>
-<turnover>166674847</turnover>
-<pe>4.398</pe>
+<volume>5286491</volume>
+<turnover>537814461</turnover>
+<pe>4.351</pe>
 <market_capital></market_capital>
 <month_high>108.50</month_high>
 <month_low>100.50</month_low>
@@ -44,6 +44,6 @@
 <gearing>0.000</gearing>
 <premium>0.000</premium>
 <currency>HKD</currency>
-<date>2015/11/27 13:00</date>
+<date>2015/11/27 16:01</date>
 </stock>
 </quote>

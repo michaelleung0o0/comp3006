@@ -7,7 +7,7 @@ from Welcome import Welcome
 from Register import Register
 from Forget_password import Forget_password
 from Setting import Setting
-from Finances import Finances
+from FinancesL import FinancesL
 from About_Us import About_Us
 
 from customString import customString
@@ -38,12 +38,7 @@ class Login ( wx.Panel ):
 		self.lg_panel.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_MENU ) )
 
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
-		try:
-			image_file = 'bg.jpg'
-			bmp = wx.Image(image_file, wx.BITMAP_TYPE_ANY).ConvertToBitmap()
-			self.bitmap = wx.StaticBitmap(self.lg_panel, -1, bmp, (0,0))
-		except IOError:
-			raise SystemExit
+
 
 
 
@@ -171,12 +166,10 @@ class Login ( wx.Panel ):
 
 
 	def onRegister( self, event ):
-		self.Close()
 		self.Register = Register(self)
 		self.Register.Show()
 
 	def onForgetPassword( self, event ):
-		self.Close()
 		self.Forget_password = Forget_password(self)
 		self.Forget_password.Show()
 
@@ -184,18 +177,14 @@ class Login ( wx.Panel ):
 		sys.exit(0)
 
 	def onSetting( self, event ):
-		self.Close()
 		self.Setting = Setting(self)
 		self.Setting.Show()
 
 	def onAboutUs( self, event ):
-		# event.Skip()
-		self.Close()
 		self.About_Us = About_Us(self)
 		self.About_Us.Show()
 	def onNews( self, event ):
-		# self.Hide()
 		self.Close()
-		self.Finances = Finances(self)
-		self.Finances.Show()
+		self.FinancesL = FinancesL(self)
+		self.FinancesL.Show()
 		# Finances_L.Show()

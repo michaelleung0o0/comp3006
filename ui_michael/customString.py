@@ -116,4 +116,8 @@ class customString:
             self.setting = u'Setting'
             self.about = u'About Us'
             self.admin = 'Admin'
+        if case == 'finl':
+            self.title = u'Finances News'
+            self.exit = u'Exit'
+            self.logout = u'Back'
 

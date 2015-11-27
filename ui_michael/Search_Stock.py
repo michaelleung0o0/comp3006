@@ -20,7 +20,7 @@ class Search_Stock ( wx.Panel ):
 
 	def __init__( self, parent ):
 		self.customString = customString('search')
-		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,600 ), style = wx.TAB_TRAVERSAL )
+		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,570 ), style = wx.TAB_TRAVERSAL )
 
 		self.SetMinSize( wx.Size( 900,600 ) )
 

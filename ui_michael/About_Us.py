@@ -15,7 +15,7 @@ class About_Us ( wx.Frame ):
 
 	def __init__( self, parent ):
 		self.customString = customString('aboutus')
-		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = self.customString.title, pos = wx.DefaultPosition, size = wx.Size( 500,300 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = self.customString.title, pos = wx.DefaultPosition, size = wx.Size( 500,300 ), style = wx.TE_READONLY|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
 
 		self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
 
@@ -30,7 +30,7 @@ class About_Us ( wx.Frame ):
 
 		bSizer63.Add( self.m_staticText30, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
 
-		self.m_richText3 = wx.richtext.RichTextCtrl( self.m_panel11, wx.ID_ANY, self.customString.content, wx.DefaultPosition, wx.DefaultSize, 0|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
+		self.m_richText3 = wx.richtext.RichTextCtrl( self.m_panel11, wx.ID_ANY, self.customString.content, wx.DefaultPosition, wx.DefaultSize, wx.TE_READONLY|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
 		bSizer63.Add( self.m_richText3, 1, wx.EXPAND |wx.ALL, 5 )
 
 		self.exit = wx.Button( self.m_panel11, wx.ID_ANY, self.customString.exit, wx.DefaultPosition, wx.DefaultSize, 0 )

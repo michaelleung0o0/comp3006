@@ -1,22 +1,21 @@
-##missing the home
 import wx
 import wx.xrc
 import wx.richtext
 import sys
 
+#from Login import Login
 from customString import customString
 from readNews import readNews
-
 # from apiRequest import apiRequest
 ###########################################################################
 ## Class Finances
 ###########################################################################
 
-class Finances ( wx.Panel ):
+class FinancesL ( wx.Panel ):
 
 	def __init__( self, parent ):
-		self.customString = customString('fin')
-		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,570 ), style = wx.TAB_TRAVERSAL )
+		self.customString = customString('finl')
+		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,600 ), style = wx.TAB_TRAVERSAL )
 
 		self.SetMinSize( wx.Size( 900,600 ) )
 
@@ -54,6 +53,13 @@ class Finances ( wx.Panel ):
 
 		bSizer4 = wx.BoxSizer( wx.HORIZONTAL )
 
+		self.Exit = wx.Button( self.f_panel, wx.ID_ANY, self.customString.exit, wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer4.Add( self.Exit, 0, wx.ALL, 5 )
+
+		self.Back = wx.Button( self.f_panel, wx.ID_ANY, self.customString.logout, wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer4.Add( self.Back, 0, wx.ALL, 5 )
+
+
 		bSizer1.Add( bSizer4, 0, 0, 5 )
 
 
@@ -66,6 +72,10 @@ class Finances ( wx.Panel ):
 		self.SetSizer( bSizerFrame )
 		self.Layout()
 
+		# Connect Events
+		self.Exit.Bind( wx.EVT_BUTTON, self.ExitOnButtonClick )
+		self.Back.Bind( wx.EVT_BUTTON, self.onBack )
+
 		self.readNews = readNews(self)
 		self.readNews.RSSReader()
 		# self.apiRequest = apiRequest(self)
@@ -74,3 +84,8 @@ class Finances ( wx.Panel ):
 
 
 	# Virtual event handlers, overide them in your derived class
+	def ExitOnButtonClick( self, event ):
+		sys.exit(0)
+	
+	def onBack( self, event ):
+		self.Destroy()
