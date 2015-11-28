@@ -5,7 +5,7 @@ class customString:
             self.id = u'ID: '
             self.email = u'Email: '
             self.resetpw = u'&Reset Password '
-            self.contact = u'&Contect Admin'
+            self.contact = u'&Contact Admin'
             self.cancel = u'&Cancel'
         if case == 'aboutus':
             self.title = u'About Us'

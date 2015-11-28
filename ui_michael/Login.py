@@ -7,7 +7,7 @@ from Welcome import Welcome
 from Register import Register
 from Forget_password import Forget_password
 from Setting import Setting
-from FinancesL import FinancesL
+from Finances import Finances
 from About_Us import About_Us
 
 from customString import customString
@@ -177,6 +177,8 @@ class Login ( wx.Panel ):
 		self.About_Us.Show()
 	def onNews( self, event ):
 		self.Close()
-		self.FinancesL = FinancesL(self)
-		self.FinancesL.Show()
+		self.finances = Finances(self)
+		self.finances.Show()
+		# self.FinancesL = FinancesL(self)
+		# self.FinancesL.Show()
 		# Finances_L.Show()
