@@ -96,7 +96,7 @@ class Monitoring_stock ( wx.Panel ):
 		self.search_box.Bind( wx.EVT_SEARCHCTRL_SEARCH_BTN, self.onSearch )
 		self.search_box.Bind( wx.EVT_TEXT_ENTER, self.onSearch )
 
-                
+
                 self.aRequest = apiRequest(self, '00001')
 		self.englishName = '{:>58}'.format(self.aRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.aRequest.GetCurrentPrice(self))
@@ -106,7 +106,7 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.aRequest.GetChange(self)
 		self.pctchange = self.aRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
 
@@ -120,11 +120,11 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.bRequest.GetChange(self)
 		self.pctchange = self.bRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
-		               
+
                 self.cRequest = apiRequest(self, '00005')
                 self.englishName = '{:>58}'.format(self.cRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.cRequest.GetCurrentPrice(self))
@@ -134,11 +134,11 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.cRequest.GetChange(self)
 		self.pctchange = self.cRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
-                
+
                 self.dRequest = apiRequest(self, '00016')
                 self.englishName = '{:>58}'.format(self.dRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.dRequest.GetCurrentPrice(self))
@@ -148,7 +148,7 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.dRequest.GetChange(self)
 		self.pctchange = self.dRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
                 self.eRequest = apiRequest(self, '00023')
@@ -160,10 +160,10 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.eRequest.GetChange(self)
 		self.pctchange = self.eRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
-		
+
                 self.fRequest = apiRequest(self, '00066')
                 self.englishName = '{:>58}'.format(self.fRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.fRequest.GetCurrentPrice(self))
@@ -173,7 +173,7 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.fRequest.GetChange(self)
 		self.pctchange = self.fRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
 
@@ -188,12 +188,12 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.gRequest.GetChange(self)
 		self.pctchange = self.gRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
 
 
-		
+
                 self.hRequest = apiRequest(self, '00354')
                 self.englishName = '{:>58}'.format(self.hRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.hRequest.GetCurrentPrice(self))
@@ -203,7 +203,7 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.hRequest.GetChange(self)
 		self.pctchange = self.hRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
                 self.iRequest = apiRequest(self, '00388')
@@ -215,10 +215,10 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.iRequest.GetChange(self)
 		self.pctchange = self.iRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
-                
+
                 self.jRequest = apiRequest(self, '00806')
                 self.englishName = '{:>58}'.format(self.jRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.jRequest.GetCurrentPrice(self))
@@ -228,14 +228,14 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.jRequest.GetChange(self)
 		self.pctchange = self.jRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
 
 
 
 
-		
+
                 self.kRequest = apiRequest(self, '00823')
                 self.englishName = '{:>58}'.format(self.kRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.kRequest.GetCurrentPrice(self))
@@ -245,13 +245,13 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.kRequest.GetChange(self)
 		self.pctchange = self.kRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
 
 
 
-		
+
                 self.lRequest = apiRequest(self, '00857')
                 self.englishName = '{:>58}'.format(self.lRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.lRequest.GetCurrentPrice(self))
@@ -261,13 +261,13 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.lRequest.GetChange(self)
 		self.pctchange = self.lRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
 
 
 
-		
+
                 self.mRequest = apiRequest(self, '00939')
                 self.englishName = '{:>58}'.format(self.mRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.mRequest.GetCurrentPrice(self))
@@ -277,13 +277,13 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.mRequest.GetChange(self)
 		self.pctchange = self.mRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
 
 
 
-		
+
                 self.nRequest = apiRequest(self, '01398')
                 self.englishName = '{:>58}'.format(self.nRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.nRequest.GetCurrentPrice(self))
@@ -293,14 +293,14 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.nRequest.GetChange(self)
 		self.pctchange = self.nRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
 
 
 
 
-                
+
                 self.oRequest = apiRequest(self, '02388')
                 self.englishName = '{:>58}'.format(self.oRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.oRequest.GetCurrentPrice(self))
@@ -310,7 +310,7 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.oRequest.GetChange(self)
 		self.pctchange = self.oRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
 
@@ -319,7 +319,7 @@ class Monitoring_stock ( wx.Panel ):
 
 
 
-		
+
                 self.pRequest = apiRequest(self, '02800')
                 self.englishName = '{:>58}'.format(self.pRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.pRequest.GetCurrentPrice(self))
@@ -329,13 +329,13 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.pRequest.GetChange(self)
 		self.pctchange = self.pRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
 
 
 
-		
+
                 self.qRequest = apiRequest(self, '02888')
                 self.englishName = '{:>58}'.format(self.qRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.qRequest.GetCurrentPrice(self))
@@ -345,11 +345,11 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.qRequest.GetChange(self)
 		self.pctchange = self.qRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
 
-		
+
                 self.rRequest = apiRequest(self, '03328')
                 self.englishName = '{:>58}'.format(self.rRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.rRequest.GetCurrentPrice(self))
@@ -359,10 +359,10 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.rRequest.GetChange(self)
 		self.pctchange = self.rRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
-		
+
                 self.sRequest = apiRequest(self, '03888')
                 self.englishName = '{:>58}'.format(self.sRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.sRequest.GetCurrentPrice(self))
@@ -372,10 +372,10 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.sRequest.GetChange(self)
 		self.pctchange = self.sRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
-		
+
                 self.tRequest = apiRequest(self, '03988')
                 self.englishName = '{:>58}'.format(self.tRequest.GetEnglishName(self))
 		self.currentPrice = 'Price: ' + '{:>13}'.format(self.tRequest.GetCurrentPrice(self))
@@ -385,7 +385,7 @@ class Monitoring_stock ( wx.Panel ):
 		self.change = self.tRequest.GetChange(self)
 		self.pctchange = self.tRequest.GetPctChange(self)
                 self.changedisplay = '{:>24}'.format(self.change + ' (' + self.pctchange + ')')
-		self.changedisplay = 'Chg: ' + self.changedisplay '\n'
+		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
 
@@ -400,14 +400,14 @@ class Monitoring_stock ( wx.Panel ):
 
 
 
-		
+
 		# print searchResult
 		self.displaySearchResult.Clear()
 		self.displaySearchResult.AppendText(searchResult)
 
 
 
-		
+
 
 
 	def __del__( self ):
@@ -418,7 +418,7 @@ class Monitoring_stock ( wx.Panel ):
 	def onEnter( self, event ):
 		event.Skip()
 
-		
+
 	def onSearch( self, event ):
 		# print self.search_box.GetValue()
 		#code = str(self.search_box.GetValue())
@@ -439,6 +439,6 @@ class Monitoring_stock ( wx.Panel ):
 		# print searchResult
 		# self.aRequest.UpdateSearchCode(event, code)
 
-                
+
 
 
