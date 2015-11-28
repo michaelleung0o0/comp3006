@@ -17,6 +17,13 @@ class Finances ( wx.Panel ):
 		self.customString = customString('fin')
 
 		self.aRequestNews = apiRequestNews(self)
+		self.title = self.aRequestNews.GetTitleList(self)
+		self.link = self.aRequestNews.GetLinkList(self)
+
+		self.data = ' '
+		for i in range(0, len(self.title)):
+			self.data = self.data + self.title[i] + "\n" + self.link[i] + "\n" + "\n"
+
 
 		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,570 ), style = wx.TAB_TRAVERSAL )
 
@@ -41,9 +48,10 @@ class Finances ( wx.Panel ):
 		bSizer3 = wx.BoxSizer( wx.VERTICAL )
 
 		bSizer3.SetMinSize( wx.Size( -1,400 ) )
-		self.main_c = wx.richtext.RichTextCtrl( self.f_panel, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
+		self.main_c = wx.richtext.RichTextCtrl( self.f_panel, wx.ID_ANY, self.data, wx.DefaultPosition, wx.DefaultSize, 0|wx.VSCROLL|wx.HSCROLL|wx.NO_BORDER|wx.WANTS_CHARS )
 		bSizer3.Add( self.main_c, 1, wx.EXPAND |wx.ALL, 5 )
 
+		# self.main_c.AppendText()
 
 		bSizer1.Add( bSizer3, 1, wx.EXPAND, 5 )
 
