@@ -117,5 +117,5 @@ class Search_Stock ( wx.Panel ):
 		# print searchResult
 		self.displaySearchResult.Clear()
 		self.displaySearchResult.AppendText(searchResult)
-		print searchResult
+		# print searchResult
 		# self.aRequest.UpdateSearchCode(event, code)
