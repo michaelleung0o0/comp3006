@@ -2,20 +2,21 @@ import requests
 import xml.etree.ElementTree as ET
 from codecs import EncodedFile
 
-mUrl = "http://202.125.90.199/securityQuote/genStockXMLHK.php?stockcode=00001";
+mUrl = "http://202.125.90.199/securityQuote/genStockXMLHK.php?stockcode=";
 # mUrl = 'http://cn.wsj.com/big5/rssHKstock.xml'
 # from_encoding = 'big5'
 # to_encoding = 'utf-8'
 
 
 class apiRequest():
-   def __init__(self, parent):
+   def __init__(self, parent, symbol):
 		# super(apiRequest, self).__init__()
       # english = None
 		# self.GetStockRequest()
 
   #  def GetStockRequest(self):
-      resp = requests.get(mUrl, stream=True)
+      url = mUrl + symbol
+      resp = requests.get(url, stream=True)
       if 200 != resp.status_code:
          return False
 	        # xml = resp.content.replace("big5","utf-8")
