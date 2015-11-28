@@ -14,11 +14,7 @@ class Search_Stock ( wx.Panel ):
 	def __init__( self, parent ):
 		self.customString = customString('search')
 
-		self.customString = customString('search')
-
 		self.aRequest = apiRequest(self)
-		# self.chineseName = self.aRequest.GetChineseName(self)
-		# self.schineseName = self.aRequest.GetSchineseName(sellf)
 		self.englishName = 'Name: ' + self.aRequest.GetEnglishName(self)
 		self.currentPrice = 'Current Price: ' + self.aRequest.GetCurrentPrice(self)
 		self.prefixPrice = 'Yesterday Price: ' + self.aRequest.GetPrefixPrice(self)

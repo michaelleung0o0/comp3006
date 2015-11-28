@@ -64,6 +64,7 @@ class apiRequest():
 
    def GetPctChange(self, event):
       return self.pctChange
+
    def UpdateSearchCode(self,event, symbol):
       mUrl = 'http://202.125.90.199/securityQuote/genStockXMLHK.php?stockcode=' + symbol
       print mUrl

@@ -5,9 +5,8 @@ import wx.richtext
 import sys
 
 from customString import customString
-from readNews import readNews
+from apiRequestNews import apiRequestNews
 
-# from apiRequest import apiRequest
 ###########################################################################
 ## Class Finances
 ###########################################################################
@@ -16,6 +15,9 @@ class Finances ( wx.Panel ):
 
 	def __init__( self, parent ):
 		self.customString = customString('fin')
+
+		self.aRequestNews = apiRequestNews(self)
+
 		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,570 ), style = wx.TAB_TRAVERSAL )
 
 		self.SetMinSize( wx.Size( 900,600 ) )
@@ -59,9 +61,9 @@ class Finances ( wx.Panel ):
 		self.SetSizer( bSizerFrame )
 		self.Layout()
 
-		self.readNews = readNews(self)
-		self.readNews.RSSReader()
-		# self.apiRequest = apiRequest(self)
+		# self.readNews = readNews(self)
+		# self.readNews.RSSReader()
+
 	def __del__( self ):
 		pass
 

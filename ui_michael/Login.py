@@ -11,12 +11,6 @@ from FinancesL import FinancesL
 from About_Us import About_Us
 
 from customString import customString
-# Login = None
-# Search_Stock = None
-# Monitoring_stock = None
-# finances = None
-# Admin = None
-
 
 ###########################################################################
 ## Class Login
@@ -27,8 +21,6 @@ class Login ( wx.Panel ):
 	def __init__( self, parent ):
 		self.customString = customString('login')
 		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,600 ), style = wx.TAB_TRAVERSAL )
-	# def __init__(self, *arg, **kwargs):
-		# super(Login, self).__init__(*arg, **kwargs)
 
 		self.SetMinSize( wx.Size( 900,600 ) )
 

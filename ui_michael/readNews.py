@@ -5,14 +5,14 @@ class readNews():
     #xmlReader = None
 
     def __init__(self, url):
-        self.xmlread = xmlReader(url,'','news.xml')
+        self.xmlread = xmlReader(url,'news.xml')
         self.xmlread.requestXML()
 
     def displayAllXML(self):
         #content = self.xmlread.requestXML()
         #content = self.xmlread.decodeBig5(content)
         #print content
-        with open ('news' + '.xml', "r") as myfile:
+        with open ('news.xml', "r") as myfile:
             content = myfile.read().decode('big5')
         #return content
         return content
