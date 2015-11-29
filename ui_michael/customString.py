@@ -83,6 +83,8 @@ class customString:
             self.news = u'News'
         if case == 'monitor':
             self.title = u'Monitoring Stock'
+            self.searchsk = u'Monitoring Stock'
+            self.searchdef = u'000001'
             self.exit = u'Exit'
             self.logout = u'Logout'
             self.home = u'Home'

@@ -13,7 +13,7 @@ import time
 class Monitoring_stock ( wx.Panel ):
 
 	def __init__( self, parent ):
-		self.customString = customString('search')
+		self.customString = customString('monitor')
 
 		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,570 ), style = wx.TAB_TRAVERSAL )
 
@@ -391,7 +391,7 @@ class Monitoring_stock ( wx.Panel ):
 		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
                 print ('aaaa')
-		
+
 
 
 
