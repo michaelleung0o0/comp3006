@@ -33,6 +33,12 @@ class Login ( wx.Panel ):
 
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 
+		try:
+			image_file = 'bg.jpg'
+			bmp = wx.Image(image_file, wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+			self.bitmap = wx.StaticBitmap(self.lg_panel, -1, bmp, (0,0))
+		except IOError:
+			raise SystemExit
 
 
 
