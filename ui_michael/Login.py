@@ -2,6 +2,7 @@ import wx
 import wx.xrc
 import wx.richtext
 import sys
+from SQLOp import sqlConnection
 
 from Welcome import Welcome
 from Register import Register
@@ -20,6 +21,7 @@ class Login ( wx.Panel ):
 
 	def __init__( self, parent ):
 		self.customString = customString('login')
+
 		wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 900,600 ), style = wx.TAB_TRAVERSAL )
 
 		self.SetMinSize( wx.Size( 900,600 ) )
@@ -151,8 +153,19 @@ class Login ( wx.Panel ):
 
 	# Virtual event handlers, overide them in your derived class
 	def onlogin( self, event ):
-		self.Close()
-		self.Hide()
+		# certifcate
+		# sc = sqlConnection("http://localhost", "admin1", "123456", "sms")
+		# sc.runSQL("select uid from userinfo")
+		# s = sc.printSQLResult("select password from userinfo where username = " + self.m_textCtrl31.GetValue() )
+		# # sc.runSQL("select * from userinfo where username = " + self.m_textCtrl31.GetValue() + )
+		# if(s == self.m_textCtrl41.GetValue()):
+			self.Close()
+			self.Hide()
+
+		# print self.m_textCtrl31.GetValue()
+		# print self.m_textCtrl41.GetValue()
+		# self.Close()
+		# self.Hide()
 
 		# Welcome.Show()
 
