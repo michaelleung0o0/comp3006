@@ -82,7 +82,7 @@ class Login ( wx.Panel ):
 		self.m_staticText61.Wrap( -1 )
 		fgSizer181.Add( self.m_staticText61, 0, wx.ALL, 5 )
 
-		self.m_textCtrl41 = wx.TextCtrl( self.lg_panel, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_textCtrl41 = wx.TextCtrl( self.lg_panel, wx.ID_ANY, wx.EmptyString, style=wx.TE_PASSWORD )
 		self.m_textCtrl41.SetMinSize( wx.Size( 250,-1 ) )
 
 		fgSizer181.Add( self.m_textCtrl41, 1, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
@@ -165,9 +165,11 @@ class Login ( wx.Panel ):
 		# s = sc.printSQLResult("select password from userinfo where username = " + self.m_textCtrl31.GetValue() )
 		# # sc.runSQL("select * from userinfo where username = " + self.m_textCtrl31.GetValue() + )
 		# if(s == self.m_textCtrl41.GetValue()):
+		if( self.m_textCtrl31.GetValue()== "admin" and self.m_textCtrl41.GetValue() == "123456"):
 			self.Close()
 			self.Hide()
-
+		else:
+			wx.MessageBox('You have failed to log in.', 'Login Failure', wx.ICON_INFORMATION)
 		# print self.m_textCtrl31.GetValue()
 		# print self.m_textCtrl41.GetValue()
 		# self.Close()
