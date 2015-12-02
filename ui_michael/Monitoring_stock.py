@@ -101,28 +101,28 @@ class Monitoring_stock ( wx.Panel ):
 
 
                 self.aRequest = apiRequest(self, '00001')
-		self.englishName = '{:^58}'.format(self.aRequest.GetEnglishName(self))
-		self.currentPrice = 'Price: ' + '{:^11}'.format(self.aRequest.GetCurrentPrice(self))
-		self.prefixPrice = 'LDay Price: ' + '{:^11}'.format(self.aRequest.GetPrefixPrice(self))
-		self.highPrice = 'High: ' + '{:^11}'.format(self.aRequest.GetHighPrice(self))
-		self.lowPrice = 'Low: ' + '{:^11}'.format(self.aRequest.GetLowPrice(self))
+		self.englishName = '{:<58}'.format(self.aRequest.GetEnglishName(self))
+		self.currentPrice = 'Price: ' + '{:<11}'.format(self.aRequest.GetCurrentPrice(self))
+		self.prefixPrice = 'LDay Price: ' + '{:<11}'.format(self.aRequest.GetPrefixPrice(self))
+		self.highPrice = 'High: ' + '{:<11}'.format(self.aRequest.GetHighPrice(self))
+		self.lowPrice = 'Low: ' + '{:<11}'.format(self.aRequest.GetLowPrice(self))
 		self.change = self.aRequest.GetChange(self)
 		self.pctchange = self.aRequest.GetPctChange(self)
-                self.changedisplay = '{:^20}'.format(self.change + ' (' + self.pctchange + ')')
+                self.changedisplay = '{:<20}'.format(self.change + ' (' + self.pctchange + ')')
 		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 		searchResult = self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
 
 
 
                 self.bRequest = apiRequest(self, '00003')
-                self.englishName = '{:^58}'.format(self.bRequest.GetEnglishName(self))
-		self.currentPrice = 'Price: ' + '{:^11}'.format(self.bRequest.GetCurrentPrice(self))
-		self.prefixPrice = 'LDay Price: ' + '{:^11}'.format(self.bRequest.GetPrefixPrice(self))
-		self.highPrice = 'High: ' + '{:^11}'.format(self.bRequest.GetHighPrice(self))
-		self.lowPrice = 'Low: ' + '{:^11}'.format(self.bRequest.GetLowPrice(self))
+                self.englishName = '{:<58}'.format(self.bRequest.GetEnglishName(self))
+		self.currentPrice = 'Price: ' + '{:<11}'.format(self.bRequest.GetCurrentPrice(self))
+		self.prefixPrice = 'LDay Price: ' + '{:<11}'.format(self.bRequest.GetPrefixPrice(self))
+		self.highPrice = 'High: ' + '{:<11}'.format(self.bRequest.GetHighPrice(self))
+		self.lowPrice = 'Low: ' + '{:<11}'.format(self.bRequest.GetLowPrice(self))
 		self.change = self.bRequest.GetChange(self)
 		self.pctchange = self.bRequest.GetPctChange(self)
-                self.changedisplay = '{:^20}'.format(self.change + ' (' + self.pctchange + ')')
+                self.changedisplay = '{:<20}'.format(self.change + ' (' + self.pctchange + ')')
 		self.changedisplay = 'Chg: ' + self.changedisplay + '\n'
 
 		searchResult = searchResult + self.englishName + "  |  " + self.currentPrice + "  |  " + self.prefixPrice + "  |  " + self.highPrice + "  |  " + self.lowPrice + "  |  " + self.changedisplay
